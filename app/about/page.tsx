@@ -126,7 +126,7 @@ export default function AboutPage({}: Props) {
                   className="text-violet-700 dark:text-violet-500"
                   href="https://github.com/timlrx/tailwind-nextjs-starter-blog"
                 >
-                  Timothy's Next.js and Tailwind CSS template
+                 Timothy's Next.js and Tailwind CSS template
                 </CustomLink>
                 : Template starter where I bootstrapped the project.
               </li>
