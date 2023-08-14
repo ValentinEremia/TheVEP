@@ -15,6 +15,7 @@ import IMG13 from "../app/assets/portfolio13.jpg";
 import IMG14 from "../app/assets/portfolio14.jpg";
 import IMG15 from "../app/assets/portfolio15.jpg";
 import IMG16 from "../app/assets/portfolio16.jpg";
+import IMG17 from "../app/assets/portfolio17.jpg";
 import { StaticImageData } from "next/image";
  
 
@@ -165,13 +166,22 @@ export const items: Props[] = [
 		demo: "https://valentineremia.github.io/trvl/",
 	  },
 	  {
-		id: 15,
+		id: 16,
 		title: "The Void Tattoo",
 		image: IMG16,
 		description:
 		  ' The Void Tattoo . Is a responsive landing page and PWA. It was built using ReactJS',
 		github: " ",
 		demo: "https://valentineremia.github.io/tatoo/",
+	  },
+	  {
+		id: 17,
+		title: "Linear.app",
+		image: IMG17,
+		description:
+		  'Rebuilding Linear.app homepage with Next.js and Tailwind. Is a responsive landing page.',
+		github: " ",
+		demo: "https://linear-clone-next-tailwind.vercel.app/",
 	  },
 ]
  
