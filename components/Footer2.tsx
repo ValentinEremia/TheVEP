@@ -57,16 +57,17 @@ const social_links = [
 
     url: "https://www.facebook.com/valentin.eremia.5095",
   },
-  {
-    icon: (
-      <MdMarkEmailUnread
-        className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
-		transition-all duration-500 ease-out hover:scale-110"
-      />
-    ),
+  // {
+  //   icon: (
+  //     <MdMarkEmailUnread
+  //       className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
+	// 	transition-all duration-500 ease-out hover:scale-110"
+  //     />
+  //   ),
 
-    url: "mailto:valentineremia@yahoo.com",
-  },
+  //   url: "mailto:valentineremia@yahoo.com",
+  // },
+  
 ];
 
 export default function Footer2() {

@@ -27,13 +27,21 @@ const Hero = (props: Props) => {
             I am a mobile and web app developer with a strong focus on front-end
             and system design. <br />
             <Link
+              href={`/contact`}
+              className="font-medium leading-6 text-violet-500 hover:text-violet-300 transition-color duration-500 "
+              aria-label={`Go to Contact Page`}
+              title={`Contact me`}
+            >
+              Get in touch &rarr;
+            </Link>
+            {/* <Link
               href={`mailto:${siteMetadata.email}`}
               className="font-medium leading-6 text-violet-500 hover:text-violet-300 transition-color duration-500 "
               aria-label={`Email to ${siteMetadata.email}`}
               title={`Email to ${siteMetadata.email}`}
             >
               Get in touch &rarr;
-            </Link>
+            </Link> */}
           </p>
         </div>
         </div>
