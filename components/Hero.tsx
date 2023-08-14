@@ -10,8 +10,8 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <Container>
-      <div className="flex flex-col justify-around w-full h-content sm:h-content-sm">
-        <div className="flex items-center  h-screen">
+      <div className="flex flex-col items-center justify-around w-full h-content sm:h-content-sm">
+        <div className="flex items-center justify-center h-screen">
           <VercelHeroText />
         </div>
 
