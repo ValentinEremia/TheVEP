@@ -5,7 +5,7 @@ type Props = {};
 export default function VercelHeroText({}: Props) {
   return (
     <div>
-      <h1 className=" py-14 text-[21vw] text-center sm:text-9xl leading-none select-none tracking-tightest font-extrabold">
+      <h1 className=" py-14 text-[21vw] text-center sm:text-[9rem] md:text-[10rem] leading-none select-none tracking-tightest font-extrabold">
         <span
           data-content="Welcome"
           className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-black dark:before:text-white before:animate-gradient-background-1"

@@ -5,14 +5,14 @@ import { Switch } from "@headlessui/react";
 const ThemeSwitch = () => {
   const [isDark, mounted, setTheme] = useDarkTheme();
   return (
-    <div className="flex items-center w-12 h-6 ml-4">
+    <div className="flex items-center w-12 h-5 ml-4">
       {mounted && (
         <Switch
           checked={isDark}
           title="Theme switch"
           onChange={() => setTheme(isDark ? "light" : "dark")}
           className={`${isDark ? "bg-gray-700" : "bg-gray-300"}
-          relative inline-flex shrink-0 h-6 w-12 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+          relative  inline-flex shrink-0 h-[1.25rem] w-[2.75rem] border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
         >
           <span className="sr-only">Use setting</span>
           <svg
@@ -21,7 +21,7 @@ const ThemeSwitch = () => {
             fill="currentColor"
             className={`${
               isDark ? "translate-x-6" : "translate-x-0"
-            } border-2 border-transparent absolute h-6 w-6 text-gray-900 dark:text-gray-100 transition ease-in-out duration-200`}
+            } border-2 border-transparent absolute h-5 w-5 text-gray-900 dark:text-gray-100 transition ease-in-out duration-200`}
           >
             {isDark ? (
               <path
@@ -37,7 +37,7 @@ const ThemeSwitch = () => {
             aria-hidden="true"
             className={`${
               isDark ? "translate-x-0 " : "translate-x-6"
-            } bg-gray-100 pointer-events-none inline-block h-6 w-6 rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200  `}
+            } bg-gray-100 pointer-events-none inline-block h-5 w-5 rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200  `}
           ></span>
         </Switch>
       )}
