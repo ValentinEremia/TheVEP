@@ -19,7 +19,7 @@ export default function VercelHeroText({}: Props) {
           data-content="to my"
           className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-black dark:before:text-white  before:animate-gradient-background-2"
         >
-          <span className="px-2 text-transparent bg-clip-text bg-gradient-to-r from-gradient-2-start to-gradient-2-end animate-gradient-foreground-2">
+          <span className="px-3 text-transparent bg-clip-text bg-gradient-to-r from-gradient-2-start to-gradient-2-end animate-gradient-foreground-2">
             {" "}
             to my
           </span>
