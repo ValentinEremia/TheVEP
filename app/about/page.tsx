@@ -97,7 +97,7 @@ export default function AboutPage({}: Props) {
                     target="_blank"
                     className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer
                     
-										transition-all duration-500 ease-out hover:scale-125 hover:text-primary-500"
+										transition-all duration-300 ease-out hover:scale-125 hover:text-primary-500"
                   >
                     {link.icon}
                   </a>
@@ -162,7 +162,7 @@ export default function AboutPage({}: Props) {
             </p>
           </div>
           <div className="mt-14">
-            <p className="text-gray-300 dark:text-gray-700">
+            <p className="text-gray-400 dark:text-gray-500">
               Last updated at 12-03-2023
             </p>
           </div>

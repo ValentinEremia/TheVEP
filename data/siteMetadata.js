@@ -3,7 +3,7 @@ const siteMetadata = {
   author: "Valentin E.",
   mySpecialization: "Junior Frontend Developer",
   headerTitle: "Valy Portfolio",
-  description: "Valy's site",
+  description: "A blog created with Next.js and Tailwind.css",
 
   language: "en-us",
   

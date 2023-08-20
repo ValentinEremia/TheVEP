@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Container from "@/components/Container";
 import { ThemeProvider } from "next-themes";
 import Footer2 from "@/components/Footer2";
+import ScrollTop from "@/components/ScrollTop";
  
 
 
@@ -27,7 +28,10 @@ export default function RootLayout({
           <body>
         <ThemeProvider attribute="class">
             <Header />
+            <ScrollTop/>
+    
             {children}
+                
             <hr className="border-gray-800 w-full"/>
             <Container>
               <Footer2/>

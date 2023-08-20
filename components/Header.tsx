@@ -1,9 +1,12 @@
 "use client"
+
 import headerNavLinks from "@/data/headerNavLinks";
 import Link from "./CustomLink";
 import { useEffect, useState } from "react";
 import MenuButton from "./MenuButton";
 import ThemeSwitch from "./ThemeSwitch";
+// import siteMetadata from '@/data/siteMetadata'
+// import MyLogo from '@/public/static/logo.svg'
 
 function useIsScrollTop() {
   const [isTop, setIsTop] = useState(true);
@@ -48,8 +51,14 @@ export default function Header() {
           isTop ? "border-none" : "border-b border-gray-200 dark:border-gray-800"
         } bg-white dark:bg-black bg-opacity-30 dark:bg-opacity-30 backdrop-filter backdrop-saturate-150 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100`}
       >
-        <nav className="flex items-center justify-between w-full max-w-2xl px-4 mx-auto sm:px-6 sm:py-2 md:max-w-3xl xl:max-w-4xl xl:px-0">
+        <nav className="flex items-center justify-between w-full max-w-2xl px-4 mx-auto sm:px-6 sm:py-1 md:max-w-3xl xl:max-w-4xl xl:px-0">
+        
+         
+          
+         
+      
           <div className="flex items-center text-base leading-5">
+            
             <div className="hidden sm:block sm:space-x-8">
               {headerNavLinks
                 
@@ -69,6 +78,7 @@ export default function Header() {
             </div>
           </div>
           <ThemeSwitch />
+          
         </nav>
       </header>
       {/* Mobile side menu */}

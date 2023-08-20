@@ -15,7 +15,7 @@ const social_links = [
     icon: (
       <FaGithub
         className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
-		transition-all duration-500 ease-out hover:scale-125"
+		transition-all duration-300 ease-out hover:scale-125"
       />
     ),
     url: "https://github.com/ValentinEremia",
@@ -24,7 +24,7 @@ const social_links = [
     icon: (
       <FaTwitter
         className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
-		transition-all duration-500 ease-out hover:scale-125"
+		transition-all duration-300 ease-out hover:scale-125"
       />
     ),
     url: "https://twitter.com/Valenti3112",
@@ -33,7 +33,7 @@ const social_links = [
     icon: (
       <FaInstagram
         className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
-		transition-all duration-500 ease-out hover:scale-125"
+		transition-all duration-300 ease-out hover:scale-125"
       />
     ),
     url: "https://www.instagram.com/licanianul",
@@ -42,7 +42,7 @@ const social_links = [
     icon: (
       <FaYoutube
         className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
-		transition-all duration-500 ease-out hover:scale-125"
+		transition-all duration-300 ease-out hover:scale-125"
       />
     ),
     url: "https://www.youtube.com/user/licanianul",
@@ -51,7 +51,7 @@ const social_links = [
     icon: (
       <FaFacebook
         className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
-		transition-all duration-500 ease-out hover:scale-125"
+		transition-all duration-300 ease-out hover:scale-125"
       />
     ),
 
@@ -75,8 +75,8 @@ export default function Footer2() {
     <footer>
       <div className="flex flex-col items-center pb-8">
         <nav className="flex  flex-col  justify-between w-full max-w-3xl  gap-14  py-8  mt-4 xl:max-w-3xl  ">
-          {/* ----- Portfolio ----- */}
-          <div className="flex flex-col space-y-4  items-center max-w-fit m-auto  ">
+          {/* ----- N a v i g a t i o n ----- */}
+          <div className=" sm:hidden flex  flex-col space-y-4  items-center max-w-fit m-auto  ">
             <p className="text-md uppercase  font-bold">N a v i g a t i o n </p>
 
             <div className="flex gap-5">
