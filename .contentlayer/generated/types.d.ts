@@ -19,6 +19,8 @@ export type Post = {
   date: IsoDateTimeString
   /** The summary of the post */
   summary?: string | undefined
+  /** The banner of the post */
+  image?: string | undefined
   /** MDX file body */
   body: MDX
   url: string

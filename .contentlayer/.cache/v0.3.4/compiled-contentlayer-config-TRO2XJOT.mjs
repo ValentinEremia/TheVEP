@@ -19,6 +19,11 @@ var Post = defineDocumentType(() => ({
       type: "string",
       description: "The summary of the post",
       required: false
+    },
+    image: {
+      type: "string",
+      description: "The banner of the post",
+      required: false
     }
   },
   computedFields: {
@@ -35,4 +40,4 @@ var contentlayer_config_default = makeSource({
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-ZXTAO4LB.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-TRO2XJOT.mjs.map

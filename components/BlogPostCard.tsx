@@ -1,22 +1,22 @@
 "use client"
  
 
-import Image, { StaticImageData } from "next/image"
+ 
 import CustomLink from "./CustomLink"
  
  
 
 interface Props {
-	title: string
-	image: StaticImageData
-	description?: string
+	title?: string
+	image?: string  
+	summary?: string
 	link: string
-	id?: number
+ 
 }
 
  
 
-const ProjectCard = ({ link, image, title, description }: Props) => {
+const BlogPostCard = ({ link, image, title, summary }: Props) => {
 	 
 	return (
 		 
@@ -26,14 +26,22 @@ const ProjectCard = ({ link, image, title, description }: Props) => {
       className="p-4 mx-auto  sm:w-1/2 max-w-[34rem]"
       showIcon={false}
     >
-      <div className="h-full overflow-hidden border-2 border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400">
-        <Image
+      <div className="h-full overflow-hidden border-[1px] border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400">
+        <img
+          alt={title}
+          src={image}
+          className="object-cover object-center   lg:h-48 md:h-36 "
+          width={544}
+          height={306}
+           
+        />
+        {/* <Image
           alt={title}
           src={image}
           className="object-cover object-center border-b border-gray-800 border-solid lg:h-48 md:h-36 "
           width={544}
           height={306}
-        />
+        /> */}
         <div className="p-6">
           <h4 className="mb-3 text-2xl font-bold leading-8 tracking-tight text-black dark:text-white">
             {title}
@@ -51,11 +59,11 @@ const ProjectCard = ({ link, image, title, description }: Props) => {
               </g>
             </svg>
           </h4>
-          <p className="mb-3 prose text-gray-500 max-w-none dark:text-gray-400">{description}</p>
+          <p className="mb-3 prose text-gray-500 max-w-none dark:text-gray-400">{summary}</p>
           
         </div>
       </div>
     </CustomLink>
 	)
 }
-export default ProjectCard
+export default BlogPostCard
