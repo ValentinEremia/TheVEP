@@ -43,7 +43,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
 
     
-     <div className="my-3">
+     <div className="my-3  ">
       
           <PageTitle >
          
@@ -53,6 +53,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
           <p className=" text-slate-500 ">
             {format(parseISO(post.date), "LLLL d, yyyy")}
           </p>
+          <img src={post.image} alt={post.title} />
           <article>
             <MDXContent components={{ ...MDXComponents }} />
           </article>
