@@ -122,12 +122,6 @@ html {
   max-width: 100% !important;
 }
 
-code:not(pre) {
-  background: #6339ac;
-  color: #d3d3d5;
-  padding: 0.3rem;
-  border-radius: 4px;
-}
 @layer components {
 
   img {
@@ -143,8 +137,12 @@ code:not(pre) {
   
   
   pre {
-    @apply bg-slate-800 text-white my-2
-    whitespace-pre-wrap rounded-md p-3;
+    @apply dark:bg-gray-900 bg-gray-100 dark:text-white  text-gray-500 my-2
+    whitespace-pre-wrap rounded-md p-3 border-[1px] border-gray-300 dark:border-gray-600 text-base w-[90vw] md:w-auto mx-auto;
+  }
+  p code{
+    @apply dark:bg-[#262626] bg-[#efefef] 
+      text-green-500 font-semibold  rounded-md  px-4 py-1 ;
   }
   
   quote {
@@ -162,15 +160,7 @@ code:not(pre) {
   /* ----------------- */
 
   
-/* pre {
-  padding: 15px 20px;
-  border-radius: 10px;
-  background-color: #f9f8f9;
-  overflow: auto;
-  font-size: 0.9rem;
-  margin: 40px 0;
-  max-width: 80vw;
-} */
+
 article p {
   font-size: 1rem;
   line-height: 1.8rem;
@@ -237,14 +227,14 @@ article a:hover {
   border-bottom: #0170F2 1px solid;
 }
 
-article p code {
+/* article p code {
   background-color: #d7d7d7;
   color: #515151;
   padding: 3px 11px;
   border-radius: 5px;
   font-size: 0.9rem;
   
-}
+} */
 article pre code {
   background-color: transparent;
   padding: 0;
