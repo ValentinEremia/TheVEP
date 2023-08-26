@@ -1,0 +1,106 @@
+---
+title: Learning Web Development Together with a Real Project
+date: 2023-08-27
+summary: I created a project to serve as a playground for everyone who wants to learn Web Development and play around with some concepts, such as React, NextJS, GraphQL, TailwindCSS, Typescript, React Query, Vitest and more! 
+image: https://res.cloudinary.com/practicaldev/image/fetch/s--vJlnVcoe--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0rs0sqfoyultgson11zu.png 
+---
+
+  
+
+Learning through tutorials alone is not enough, some hands-on practice is required in order to properly understand the concepts.
+
+I created a project to serve as a playground for everyone who wants to learn Web Development and play around with some concepts, such as React, NextJS, GraphQL, TailwindCSS, Typescript, React Query, Vitest and more!
+ 
+ 
+## What's this?
+
+Before stating whether this tool is useful or not (it might be) let's disclose its primary goal: improving our skills.
+
+Why our? Because this tool is open source and everyone is more than welcome to contribute to it!
+
+You can grab an issue at any time, or join the [Discord](https://discord.gg/bqwyEa6We6) server to discuss the project and its future. Nothing is set in stone, so feel free to share your ideas and suggestions.
+
+## Technologies involved
+
+The app is currently based on [Next.js](https://nextjs.org/) with TypeScript and Tailwind CSS (actually with [DaisyUI](https://daisyui.com/), a Tailwind CSS component library).
+
+We manage some data, specifically from the [GitHub APIs](https://docs.github.com/en/graphql) using the [GraphQL](https://graphql.org/) endpoint and [React Query](https://tanstack.com/query/latest/).
+
+There's a login feature with [NextAuth](https://next-auth.js.org/) using GitHub as a provider.
+
+### Coming soon
+
+The plan is to also add at…
+
+[View on GitHub](https://github.com/Balastrong/github-stats)
+
+Here's a quick overview of the project:
+
+<iframe width="710" height="399" src="https://www.youtube.com/embed/ZM92XPdrOTk" allowfullscreen="" loading="lazy" class=" fluidvids-elem"></iframe>
+
+## [](https://dev.to/this-is-learning/learning-web-development-together-with-a-real-project-1bf8#why-this-project)Why this project?
+
+As of today it's still pretty basic because that's exactly the point, building it together! I already mentioned some of the technologies involved but I'm planning to add more, everything will be kept up to date in the README file.
+
+I've written a lot of tutorials and I think they can be helpful, but the final step is always to put the concepts into practice and I think this project can be a good starting point.
+
+You can use it to learn or improve your technical skills, but it is also a great chance to start contributing to Open Source in a controlled environment. It can help getting familiar with the process of contributing to a project between issues, pull requests, code reviews and so on.
+
+Like I say many times in the video, the goal isn't the success of the final product but rather the process of building it together.
+
+I'm also not necessarily an expert in all the technologies I'd like to see in the project, so I'm also going to learn a lot from it and I really can't wait to see your contributions!
+
+## [](https://dev.to/this-is-learning/learning-web-development-together-with-a-real-project-1bf8#how-to-contribute)How to contribute
+
+If you want to participate, you can find the instructions in the [README](https://github.com/Balastrong/github-stats/blob/main/README.md) and in the [CONTRIBUTING](https://github.com/Balastrong/github-stats/blob/main/CONTRIBUTING.md) files, including some instructions on how to set up the environment variables (most notably, the tokens for the GitHub login as we'll see later).
+
+The project is open to any kind of contribution, from fixing typos to adding new features, so don't be shy and feel free to contribute!
+
+You can do basically everything at this point, for example:
+
+-   Open an issue to report a bug or suggest a new feature
+-   Answer or provide feedback on issues (there are some open questions)
+-   Comment on an issue to get it assigned so you can start working on it
+-   Open a pull request to fix a bug or add a new feature (make sure to link the assignedissue)
+-   Do some code review on a pull request
+
+## [](https://dev.to/this-is-learning/learning-web-development-together-with-a-real-project-1bf8#what-is-the-project-about)What is the project about?
+
+Ah right, I didn't mention it yet! I felt what said here above was actually more important than the project itself, but I guess it's time to talk about it.
+
+There's a hosted version here: [https://public-github-stats.vercel.app/](https://public-github-stats.vercel.app/)
+
+The overall idea is that it might be useful to have some relevant data, extracted and grouped from the official GitHub APIs, to use it in your CV or portfolio. Putting the GitHub link is already fine (mandatory, I would say), but also adding some meaningful metrics can be a nice touch.
+
+From the Homepage you'll be able to login with your GitHub Account so that your data can be pulled directly from the GitHub GraphQL endpoint.
+
+As of today there's a page listing the repositories where you opened some pull requests with the state and a total counter, grouped by year. You can nicely display in the browser or export as JSON or text ([implemented a couple of days ago](https://github.com/Balastrong/github-stats/pull/19)).
+
+#  [![GitHub logo](https://res.cloudinary.com/practicaldev/image/fetch/s--A9-wwsHG--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev.to/assets/github-logo-5a155e1f9a670af7944dd5e12375bc76ed542ea80224905ecaf878b9157cdefc.svg) feat: export buttons for json and text format #19](https://github.com/Balastrong/github-stats/pull/19)
+
+ 
+ 
+
+Created a generate text function and a button to export it. Added a button for downloading in json format as well. :)
+
+[View on GitHub](https://github.com/Balastrong/github-stats/pull/19)
+
+There's also a profile page with some basic data and actually a lot of space to put some more!
+
+In the future we can indeed add some other combined data, animations, charts and so on... or think even bigger and adding job postings or other related (or unrelated) featues! If you have any idea, feel free to [open an issue](https://github.com/Balastrong/github-stats/issues) and discuss it.
+
+Speaking of communication, to make things move faster we can also use [Discord](https://discord.gg/5CceB5Y6Zt).
+
+Do you think it's a good idea? Do you have any suggestions? Let me know in the comments and see you in the project!
+
+___
+
+Thanks for reading this article, I hope you found it interesting!
+
+I recently launched my Discord server to talk about Open Source and Web Development, feel free to join: [https://discord.gg/bqwyEa6We6](https://discord.gg/bqwyEa6We6)
+
+Do you like my content? You might consider subscribing to my YouTube channel! It means a lot to me ❤️  
+You can find it here:  
+[![YouTube](https://res.cloudinary.com/practicaldev/image/fetch/s--BHGsAAIm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://img.shields.io/badge/YouTube:%2520Dev%2520Leonardo-FF0000%3Fstyle%3Dfor-the-badge%26logo%3Dyoutube%26logoColor%3Dwhite)](https://www.youtube.com/channel/UC-KqnO3ez7vF-kyIQ_22rdA?sub_confirmation=1)
+
+Feel free to follow me to get notified when new articles are out ;)
