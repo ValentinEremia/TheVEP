@@ -117,10 +117,6 @@ html {
   
 }
 
-.prose{
-  
-  max-width: 100% !important;
-}
 
 @layer components {
 
@@ -132,13 +128,12 @@ html {
     @apply rounded-none my-0 h-auto
   }
 
-   
-   
+  /* whitespace-pre-wrap */
   
   
   pre {
     @apply dark:bg-gray-900 bg-gray-100 dark:text-white  text-gray-500 my-2
-    whitespace-pre-wrap rounded-md p-3 border-[1px] border-gray-300 dark:border-gray-600 text-base w-[90vw] md:w-auto mx-auto;
+     rounded-md p-3 border-[1px] border-gray-300 dark:border-gray-600 text-base w-[90vw] md:w-auto  mx-auto overflow-auto ;
   }
   p code{
     @apply dark:bg-[#262626] bg-[#efefef] 
