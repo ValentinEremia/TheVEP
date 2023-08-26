@@ -7,7 +7,7 @@ const PostCardPreview = (post: Post) => {
 
     
 
-<div className="mb-4 max-w-md mx-auto">
+<div className=" mb-4 max-w-md mx-auto">
 
 
     <Link href={post.url} legacyBehavior >

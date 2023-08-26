@@ -121,14 +121,24 @@ html {
   
   max-width: 100% !important;
 }
+
+code:not(pre) {
+  background: #6339ac;
+  color: #d3d3d5;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
 @layer components {
 
-  img{
+  img {
     @apply mx-auto my-6 sm:my-8 rounded-md
   }
-  .prose img {
-    @apply rounded-md
+
+  .project-card img,.post-card img{
+    @apply rounded-none my-0 h-auto
   }
+
+   
    
   
   
