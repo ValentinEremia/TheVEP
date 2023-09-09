@@ -39,7 +39,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
     <div className="  flex flex-col items-center justify-center ">
       <Container>
         <div className="my-3">
-          
+
           <div className="md:mt-10 text-center">
             <PageTitle>{post.title}</PageTitle>
           </div>
@@ -49,7 +49,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
             {format(parseISO(post.date), "LLLL d, yyyy")}
           </p>
           <img src={post.image} alt={post.title} />
-          <article className=" prose xl:prose-xl md:prose-lg sm:prose-base dark:prose-dark dark:prose-neutral">
+          <article className=" prose xl:prose-xl md:prose-lg sm:prose-base dark:prose-dark dark:prose-neutral w-[90vw] md:w-auto  mx-auto">
             <MDXContent />
           </article>
         </div>
