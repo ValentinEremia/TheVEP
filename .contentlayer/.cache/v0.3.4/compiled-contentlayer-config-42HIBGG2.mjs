@@ -29,7 +29,7 @@ var Post = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: "string",
-      resolve: (doc) => `/blog/${doc._raw.flattenedPath}`
+      resolve: (doc) => `/blog/${doc._raw.flattenedPath.replace(/^.+?(\/)/, "")}`
     }
   }
 }));
@@ -40,4 +40,4 @@ var contentlayer_config_default = makeSource({
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-TRO2XJOT.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-42HIBGG2.mjs.map

@@ -1,8 +1,7 @@
-
 import Container from "@/components/Container";
 import PageTitle from "@/components/PageTitle";
 import PostNotFound from "@/components/PostNotFound";
-import MDXComponents from '@/utils/mdxComponets';
+
 import { Post, allPosts } from "contentlayer/generated";
 import { format, parseISO } from "date-fns";
 import { Metadata } from "next";
@@ -37,31 +36,25 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
   }
 
   return (
-    <div className='  flex flex-col items-center justify-center '>
+    <div className="  flex flex-col items-center justify-center ">
+      <Container>
+        <div className="my-3">
+          
+          <div className="md:mt-10 text-center">
+            <PageTitle>{post.title}</PageTitle>
+          </div>
 
-    <Container>
-
-
-    
-     <div className="my-3  ">
-      
-          <PageTitle >
-         
-            {post.title}
-          </PageTitle>
-        <br />
+          <br />
           <p className=" text-slate-500 ">
             {format(parseISO(post.date), "LLLL d, yyyy")}
           </p>
           <img src={post.image} alt={post.title} />
-          <article>
-            <MDXContent components={{ ...MDXComponents }} />
+          <article className=" prose xl:prose-xl md:prose-lg sm:prose-base dark:prose-dark dark:prose-neutral">
+            <MDXContent />
           </article>
-        
-      
-    </div>
-    </Container>
-    <br/>
+        </div>
+      </Container>
+      <br />
     </div>
   );
 };

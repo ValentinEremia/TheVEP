@@ -4,13 +4,9 @@ import "./globals.css";
 // import '../css/prism.css';
 // import '../css/tailwind.css';
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Container from "@/components/Container";
 import { ThemeProvider } from "next-themes";
 import Footer2 from "@/components/Footer2";
 import ScrollTop from "@/components/ScrollTop";
- 
-
 
 // export const metadata = {
 //   title: "valy-web",
@@ -23,25 +19,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    
-      <html lang="en">
-        <title>valy-web</title>
-        <meta name="description" content="My Portfolio Website" />
-          <body>
+    <html lang="en">
+      <title>valy-web</title>
+      <meta name="description" content="My Portfolio Website" />
+      <body >
         <ThemeProvider attribute="class">
-            <Header />
-            <ScrollTop/>
-    
-            {children}
-                
-            <hr className="border-gray-800 w-full"/>
-            <Container>
-              <Footer2/>
-            </Container>
+          <Header />
+          <ScrollTop />
+
+          {children}
+
+          <hr className="border-gray-300 dark:border-gray-800 w-full" />
+
+          <Footer2 />
         </ThemeProvider>
-       
-          </body>
-      </html>
-   
+      </body>
+    </html>
   );
 }

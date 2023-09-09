@@ -3,9 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* scrollbar  */
+
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 13px;
 }
+
 
 *::-webkit-scrollbar-track {
   background: #b4b4b430;
@@ -18,15 +22,19 @@
  
 }
 
+
+
 /* --- */
 
 @layer components{
     .dark{
-        @apply bg-black
+        @apply bg-black selection:bg-purple-700 selection:text-white
     }
     .light{
-       @apply bg-gray-50
+       @apply bg-gray-50 selection:bg-purple-200 selection:text-black
     }
+
+    
 }
 
 html {
@@ -130,19 +138,17 @@ html {
 
   /* whitespace-pre-wrap */
   
-  
-  pre {
-    @apply dark:bg-gray-900 bg-gray-100 dark:text-white  text-gray-500 my-2
+ 
+  /* pre {
+    @apply dark:bg-[#262626] bg-gray-100 dark:text-white  text-gray-500 my-2
      rounded-md p-3 border-[1px] border-gray-300 dark:border-gray-600 text-base w-[90vw] md:w-auto  mx-auto overflow-auto ;
-  }
-  p code{
+  } */
+  /* code{
     @apply dark:bg-[#262626] bg-[#efefef] 
       text-green-500 font-semibold  rounded-md  px-4 py-1 ;
-  }
+  } */
   
-  quote {
-    @apply text-gray-400 font-normal;
-  }
+  
 
   iframe {
     @apply mx-auto my-5 w-full aspect-video h-auto rounded-md;
@@ -152,10 +158,11 @@ html {
 }
 
 
+
   /* ----------------- */
 
-  
-
+ 
+/* 
 article p {
   font-size: 1rem;
   line-height: 1.8rem;
@@ -220,17 +227,10 @@ article a {
 }
 article a:hover {
   border-bottom: #0170F2 1px solid;
-}
+} 
 
-/* article p code {
-  background-color: #d7d7d7;
-  color: #515151;
-  padding: 3px 11px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  
-} */
-article pre code {
+
+ article pre code {
   background-color: transparent;
   padding: 0;
   border-radius: 0px;
@@ -241,11 +241,26 @@ article {
   font-size: 1.1rem;
   line-height: 1.8rem;
   margin-top: 20px;
-  /* color: #171616; */
-}
-*::selection{
-  background-color: #E9E9E8;
-}
+   
+}    
+*/
+
+
+
+
+/* --------------- */
+/* --NO-- */
+
+/* article p code {
+  background-color: #d7d7d7;
+  color: #515151;
+  padding: 3px 11px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  
+} */
+
+ 
 /* 
 article img {
   max-width: 100%;
@@ -255,3 +270,7 @@ article img {
   border-radius: 20px;
   border: 1px solid #E9E8E9;
 }  */
+
+/* -- */
+
+

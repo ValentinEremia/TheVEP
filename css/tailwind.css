@@ -10,7 +10,7 @@
 
 @layer base {
   html {
-    @apply font-serif;
+    /* @apply font-serif; */
     font-size: 1.15rem;
   }
 }

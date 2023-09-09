@@ -8,7 +8,7 @@ const siteMetadata = {
   language: "en-us",
   
   siteUrl: "/",
-  siteRepo: "https://github.com/ThangHuuVu/thvu-blog",
+  siteRepo: "https://the-vep.vercel.app/",
   siteLogo: "/static/logo.png",
   image: "/static/PozaProfil.jpg",
  

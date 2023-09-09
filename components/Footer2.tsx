@@ -72,11 +72,11 @@ const social_links = [
 
 export default function Footer2() {
   return (
-    <footer>
+    <footer> 
       <div className="flex flex-col items-center pb-8">
         <nav className="flex  flex-col  justify-between w-full max-w-3xl  gap-14  py-8  mt-4 xl:max-w-3xl  ">
           {/* ----- N a v i g a t i o n ----- */}
-          <div className=" sm:hidden flex  flex-col space-y-4  items-center max-w-fit m-auto  ">
+          {/* <div className=" sm:hidden flex  flex-col space-y-4  items-center max-w-fit m-auto  ">
             <p className="text-md uppercase  font-bold">N a v i g a t i o n </p>
 
             <div className="flex gap-5">
@@ -117,7 +117,7 @@ export default function Footer2() {
                 About
               </CustomLink>
             </div>
-          </div>
+          </div> */}
 
           {/* ----- Social ----- */}
 

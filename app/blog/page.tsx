@@ -11,7 +11,7 @@ function BlogPage() {
 
   return (
     <Container>
-    <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+    <div className=" z-10 pt-6 pb-8 space-y-2 md:space-y-5">
       <PageTitle>Latest Posts</PageTitle>
     </div>
  

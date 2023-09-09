@@ -1,5 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+ 
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
+const colors = require("tailwindcss/colors");
+
 module.exports = {
+  mode: "jit",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -75,6 +82,12 @@ module.exports = {
          800: "#931E11",
          900: "#7A0D0A",
         },
+
+        green: colors.emerald,
+        yellow: colors.amber,
+        purple: colors.violet,
+        gray: colors.neutral,
+       
       },
       gradientColorStops: {
         "gradient-1-start": "#007CF0",
@@ -158,7 +171,7 @@ module.exports = {
             a: {
               color: theme("colors.primary.500"),
               "&:hover": {
-                color: theme("colors.primary.600"),
+                color: theme("colors.primary.900"),
               },
               code: { color: theme("colors.primary.400") },
             },
@@ -181,7 +194,7 @@ module.exports = {
             },
             code: {
               color: theme("colors.green.500"),
-              backgroundColor: theme("colors.gray.100"),
+              backgroundColor: theme("colors.gray.100"),        
               paddingLeft: "4px",
               paddingRight: "4px",
               paddingTop: "2px",
@@ -211,12 +224,12 @@ module.exports = {
             strong: { color: theme("colors.gray.600") },
             blockquote: {
               color: theme("colors.gray.900"),
-              borderLeftColor: theme("colors.gray.200"),
+              borderLeftColor: theme("colors.green.200"),
             },
           },
         },
         dark: {
-          css: {
+          css: {           
             color: theme("colors.gray.300"),
             a: {
               color: theme("colors.primary.500"),
@@ -269,13 +282,16 @@ module.exports = {
               },
             },
             blockquote: {
-              color: theme("colors.gray.100"),
-              borderLeftColor: theme("colors.gray.700"),
+              color: theme("colors.gray.200"),
+              borderLeftColor: theme("colors.green.800"),
             },
+          
           },
         },
       }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
