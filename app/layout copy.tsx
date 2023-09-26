@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Container from "@/components/Container";
 import { ThemeProvider } from "next-themes";
-import Footer2 from "@/components/Footer2";
+import Footer2 from "@/components/Footer";
 import ScrollTop from "@/components/ScrollTop";
 
 // export const metadata = {

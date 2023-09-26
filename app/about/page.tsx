@@ -79,6 +79,7 @@ export default function AboutPage({}: Props) {
             height={192}
             src={siteMetadata.image}
             alt="poza profil"
+            priority={true}
             className="object-cover rounded-full xl:rounded-lg"
           />
           <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
@@ -107,7 +108,7 @@ export default function AboutPage({}: Props) {
         </div>
         <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
           <h2 className="pb-4 text-3xl font-extrabold  tracking-tight text-gray-800 dark:text-gray-200   sm:leading-7 md:text-4xl md:leading-9">
-            About this site
+            This site.
           </h2>
           <p className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
             Welcome to my home on the internet. This site works as a portfolio,
@@ -142,7 +143,7 @@ export default function AboutPage({}: Props) {
             </ul>
           </div>
           <h2 className="pb-4 text-3xl font-extrabold  tracking-tight text-gray-800 dark:text-gray-200   sm:leading-7 md:text-4xl md:leading-9">
-            About me
+            Me.
           </h2>
           <div className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
             <p className="py-2">

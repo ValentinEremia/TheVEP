@@ -1,12 +1,10 @@
 "use client";
 
 import "./globals.css";
-// import '../css/prism.css';
-// import '../css/tailwind.css';
 import Header from "@/components/Header";
 import { ThemeProvider } from "next-themes";
-import Footer2 from "@/components/Footer2";
 import ScrollTop from "@/components/ScrollTop";
+import Footer from "@/components/Footer";
 
 // export const metadata = {
 //   title: "valy-web",
@@ -31,7 +29,7 @@ export default function RootLayout({
 
           <hr className="border-gray-300 dark:border-gray-800 w-full" />
 
-          <Footer2 />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

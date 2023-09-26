@@ -1,4 +1,7 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeSlug from "rehype-slug/lib";
+import remarkGfm from "remark-gfm";
 
 const Post = defineDocumentType(() => ({
   name: "Post",
@@ -29,7 +32,7 @@ const Post = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: "string",
-      resolve: (doc) => `/blog/${doc._raw.flattenedPath.replace(/^.+?(\/)/, '')}`,
+      resolve: (doc) => `/blog/${doc._raw.flattenedPath}`,
     },
   },
 }));
@@ -37,4 +40,14 @@ const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "data/blog",
   documentTypes: [Post],
+  
+  // mdx:{
+  //    remarkPlugins: [
+  //     remarkGfm
+  //    ],
+  //    rehypePlugins: [
+      
+  //     rehypeSlug,
+  //    ]
+  // }
 });

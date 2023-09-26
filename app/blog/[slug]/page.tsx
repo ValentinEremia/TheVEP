@@ -1,11 +1,11 @@
 import Container from "@/components/Container";
 import PageTitle from "@/components/PageTitle";
 import PostNotFound from "@/components/PostNotFound";
-
 import { Post, allPosts } from "contentlayer/generated";
 import { format, parseISO } from "date-fns";
 import { Metadata } from "next";
 import { getMDXComponent } from "next-contentlayer/hooks";
+import 'highlight.js/styles/github-dark.css'
 
 type Props = {
   params: { slug: string };

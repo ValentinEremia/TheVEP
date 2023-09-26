@@ -29,15 +29,23 @@ var Post = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: "string",
-      resolve: (doc) => `/blog/${doc._raw.flattenedPath.replace(/^.+?(\/)/, "")}`
+      resolve: (doc) => `/blog/${doc._raw.flattenedPath}`
     }
   }
 }));
 var contentlayer_config_default = makeSource({
   contentDirPath: "data/blog",
   documentTypes: [Post]
+  // mdx:{
+  //    remarkPlugins: [
+  //     remarkGfm
+  //    ],
+  //    rehypePlugins: [
+  //     rehypeSlug,
+  //    ]
+  // }
 });
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-42HIBGG2.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-MC7SUI34.mjs.map

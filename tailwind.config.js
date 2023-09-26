@@ -200,6 +200,8 @@ module.exports = {
               paddingTop: "2px",
               paddingBottom: "2px",
               borderRadius: "0.25rem",
+              border:"2px",
+              borderColor: theme("colors.green.500"),
             },
             "code:before": {
               content: "none",
