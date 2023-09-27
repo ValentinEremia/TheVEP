@@ -2,15 +2,19 @@
 
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
+import ContactFormEmail from "@/email/email";
+import React  from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 
-export const sendEmail = async (formData: FormData) => {
 
+
+export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
+  
   // simple server-side validation
   if (!validateString(senderEmail, 500)) {
     return {
@@ -24,20 +28,23 @@ export const sendEmail = async (formData: FormData) => {
   }
   let data;
   try {
-   data= await resend.emails.send({
+    data = await resend.emails.send({
       to: "licanianul@yahoo.com",
       from: "My_Portfolio_Blog <onboarding@resend.dev>",
       reply_to: senderEmail as string,
       subject: `Message from: ${senderEmail} `,
-      text: message as string,
+      react: React.createElement(ContactFormEmail, {
+        message: message as string,
+        senderEmail: senderEmail as string,
+      }),
     });
-  } 
-  catch (error: unknown) {
+  } catch (error: unknown) {
     return {
       error: getErrorMessage(error),
     };
   }
-return {data};
+
+  return { data };
 };
 
 // https://youtu.be/sUKptmUVIBM?t=19780

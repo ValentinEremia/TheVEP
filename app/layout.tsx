@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { ThemeProvider } from "next-themes";
 import ScrollTop from "@/components/ScrollTop";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 // export const metadata = {
 //   title: "valy-web",
@@ -28,7 +29,7 @@ export default function RootLayout({
           {children}
 
           <hr className="border-gray-300 dark:border-gray-800 w-full" />
-
+          <Toaster position="top-right" />
           <Footer />
         </ThemeProvider>
       </body>
