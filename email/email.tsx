@@ -39,7 +39,7 @@ export default function ContactFormEmail({
 
               <Hr />
               <Text className="leading-tight text-lg">
-                You received the following message from: {senderEmail}
+                You received the following message from: <strong>{senderEmail}</strong>
               </Text>
             </Section>
           </Container>
