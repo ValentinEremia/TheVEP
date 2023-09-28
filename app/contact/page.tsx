@@ -5,11 +5,38 @@ import PageTitle from "@/components/PageTitle";
 import SubmitBtn from "@/components/SubmitBtn";
 import { sendEmail } from "@/actions/sendEmail";
 import { toast } from "react-hot-toast";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 type Props = {};
 
+
+
+
 export default function ContactPage({}: Props) {
+
+
+  const formRef = useRef<HTMLFormElement | null>(null); // Declarați o referință către formular
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (!formRef.current) return; // Verificați dacă referința la formular există
+
+    const formData = new FormData(formRef.current);
+
+    const { data, error } = await sendEmail(formData);
+
+    if (error) {
+      toast.error(error);
+    } else {
+      toast.success("Email sent successfully!");
+
+      // Resetați valorile câmpurilor input după trimitere cu succes
+      if (formRef.current) formRef.current.reset();
+    }
+  };
+
+
   return (
     <Container>
       <section className="md:h-[80vh] lg:h-[95vh] flex flex-col  justify-center">
@@ -32,16 +59,20 @@ export default function ContactPage({}: Props) {
 
         <form
           className="mb-14 flex flex-col dark:text-black"
-          action={async (formData) => {
-            const { data, error } = await sendEmail(formData);
+          ref={formRef} // Adăugați referința la formular 
+          onSubmit={handleSubmit}
 
-            if (error) {
-              toast.error(error);
-              return;
-            } else {
-              toast.success("Email sent successfully!");
-            }
-          }}
+
+          // action={async (formData) => {
+          //   const { data, error } = await sendEmail(formData);
+
+          //   if (error) {
+          //     toast.error(error);
+          //     return;
+          //   } else {
+          //     toast.success("Email sent successfully!");
+          //   }
+          // }}
         >
           <input
             className="h-14 px-4 border-[1px] rounded-lg border-zinc-300  dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
