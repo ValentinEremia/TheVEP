@@ -181,7 +181,7 @@ export const items: Props[] = [
 		description:
 		  'Rebuilding Linear.app homepage with Next.js and Tailwind. Is a responsive landing page.',
 		github: " ",
-		demo: "https://linear-clone-next-tailwind.vercel.app/",
+		demo: "https://nextjs-linear-clone.vercel.app/",
 	  },
 ]
  
