@@ -39,7 +39,7 @@ export default function ContactPage({}: Props) {
 
   return (
     <Container>
-      <section className="md:h-[80vh] lg:h-[95vh] flex flex-col  justify-center">
+      <section className="md:h-[92vh] lg:h-[97vh] flex flex-col  justify-center">
         <div className=" z-10 pt-6 pb-8  ">
           <PageTitle>Contact</PageTitle>
         </div>
@@ -82,8 +82,16 @@ export default function ContactPage({}: Props) {
             maxLength={500}
             placeholder="Your email"
           />
+          <input
+            className="h-14 px-4 border-[1px] rounded-lg border-zinc-300  dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none my-4"
+            name="subject"
+            type="text"
+            required
+            maxLength={500}
+            placeholder="Subject"
+          />
           <textarea
-            className="  h-52 my-4 rounded-lg border-[1px]  border-zinc-300  p-4 dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            className="  h-52 mb-5 rounded-lg border-[1px]  border-zinc-300  p-4 dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
             name="message"
             placeholder="Your message"
             required

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Html,
   Body,
@@ -11,30 +10,37 @@ import {
   Text,
 } from "@react-email/components";
 import { Tailwind } from "@react-email/tailwind";
+import * as React from "react";
 
 type ContactFormEmailProps = {
-  message: string;
   senderEmail: string;
+  subject: string;
+  message: string;
 };
 
 export default function ContactFormEmail({
-  message,
   senderEmail,
+  subject,
+  message,
 }: ContactFormEmailProps) {
   return (
     <Html>
       <Head />
-      <Preview>New message from your portfolio site "www.the-vep.vercel.app/"</Preview>
+
+      <Preview>Message from "www.the-vep.vercel.app"</Preview>
       <Tailwind>
-        <Body className="bg-gray-100 text-black">
+        <Body className=" bg-gray-100 text-black">
           <Container>
-            <Section className="bg-white border-violet-600 border-2 my-10 px-10 py-4 rounded-md">
-              <Heading className="leading-tight">
-                You received the following message from the contact form
-              </Heading>
-              <Text>{message}</Text>
+            <Section className="bg-white border-violet-600 border-2 my-10 px-10 py-4 rounded-md sectiune">
+              <Text className="leading-tight text-lg">Subject: {subject}</Text>
               <Hr />
-              <Text>The sender's email is: {senderEmail}</Text>
+
+              <Heading className="text-xl">{message}</Heading>
+
+              <Hr />
+              <Text className="leading-tight text-lg">
+                You received the following message from: {senderEmail}
+              </Text>
             </Section>
           </Container>
         </Body>

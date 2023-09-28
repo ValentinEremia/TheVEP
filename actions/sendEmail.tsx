@@ -12,6 +12,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
+  const subject = formData.get("subject");
   const message = formData.get("message");
 
   
@@ -32,10 +33,11 @@ export const sendEmail = async (formData: FormData) => {
       to: "licanianul@yahoo.com",
       from: "My_Portfolio_Blog <onboarding@resend.dev>",
       reply_to: senderEmail as string,
-      subject: `Message from: ${senderEmail} `,
+      subject: subject as string,
       react: React.createElement(ContactFormEmail, {
-        message: message as string,
         senderEmail: senderEmail as string,
+        subject: subject as string,
+        message: message as string,
       }),
     });
   } catch (error: unknown) {
