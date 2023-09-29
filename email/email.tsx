@@ -32,8 +32,8 @@ export default function ContactFormEmail({
         <Body className=" bg-gray-100 text-black">
           <Container>
             <Section className="bg-white border-violet-600 border-2 my-10 px-10 py-4 rounded-md sectiune">
-              <Text className="leading-tight text-lg">Subject: <strong>{subject}</strong></Text>
-              <Hr />
+              {/* <Text className="leading-tight text-lg">Subject: <strong>{subject}</strong></Text>
+              <Hr /> */}
 
               <Heading className="text-xl">{message}</Heading>
 
