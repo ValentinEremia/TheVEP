@@ -7,6 +7,7 @@ import { format, parseISO } from "date-fns";
 import { Metadata } from "next";
 import { getMDXComponent } from "next-contentlayer/hooks";
 import {Snippet} from "@geist-ui/core"
+import Image from "next/image";
 
 
 type Props = {
@@ -55,7 +56,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
           <p className=" text-slate-500 ">
             {format(parseISO(post.date), "LLLL d, yyyy")}
           </p>
-          <img src={post.image} alt={post.title} />
+          <Image src={post.image ||''} alt={post.title} />
           {/* <article className=" prose  w-[90vw] md:w-auto  mx-auto">
             <MDXContent components={{CodeSnippet} }/>
           </article> */}
