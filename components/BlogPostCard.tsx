@@ -2,7 +2,7 @@
  
 import {motion} from 'framer-motion'
 import CustomLink from "./CustomLink"
-import Image from 'next/image'
+
  
  
 
@@ -31,7 +31,7 @@ const BlogPostCard = ({ link, image, title, summary }: Props) => {
       whileInView="animate"
       variants={PreviewAnimation}
       >
-        <Image
+        <img
           alt={title||''}
           src={image||''}
           className="object-cover object-center   lg:h-48 md:h-36 "
