@@ -1,4 +1,4 @@
-"use client"
+
 import Container from "@/components/Container";
 import PageTitle from "@/components/PageTitle";
 import PostNotFound from "@/components/PostNotFound";
@@ -38,9 +38,9 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
     MDXContent = getMDXComponent(post!.body.code);
   }
 
-  const CodeSnippet = (props: any) => (
-    <Snippet {...props} text={props.text} />
-   );
+  // const CodeSnippet = (props: any) => (
+  //   <Snippet {...props} text={props.text} />
+  //  );
    
 
   return (
@@ -61,7 +61,8 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
             <MDXContent components={{CodeSnippet} }/>
           </article> */}
           <article className=" prose xl:prose-xl md:prose-lg sm:prose-base dark:prose-dark dark:prose-neutral w-[90vw] md:w-auto  mx-auto">
-            <MDXContent components={{CodeSnippet}}/>
+            <MDXContent  />
+            {/* <MDXContent components={{CodeSnippet}}/> */}
           </article>
         </div>
       </Container>
