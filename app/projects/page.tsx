@@ -2,11 +2,12 @@ import PageTitle from "@/components/PageTitle";
 import ProjectCard from "@/components/ProjectCard";
 import { items } from "../../data/projectsData";
 import Container from "@/components/Container";
- 
+  
 
 const ProjectsPage = () => {
   return (
     <Container>
+       
       <div className=" z-10 pt-6 pb-8 space-y-2 md:space-y-5">
         <PageTitle>Projects</PageTitle>
       </div>
@@ -20,7 +21,9 @@ const ProjectsPage = () => {
           all case studies.
         </p>
       </div>
+      
       <div className="z-10 container py-8 md:py-12">
+     
         <div className="flex flex-wrap -m-4">
           {items &&
             items
@@ -35,6 +38,8 @@ const ProjectsPage = () => {
               ))}
         </div> 
       </div>
+       
+      
     </Container>
   );
 };

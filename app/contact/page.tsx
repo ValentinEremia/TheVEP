@@ -6,6 +6,7 @@ import SubmitBtn from "@/components/SubmitBtn";
 import { sendEmail } from "@/actions/sendEmail";
 import { toast } from "react-hot-toast";
 import { useRef, useState } from "react";
+ 
 
 type Props = {};
 
@@ -39,12 +40,13 @@ export default function ContactPage({}: Props) {
 
   return (
     <Container>
+      
       <section className="md:h-[92vh] lg:h-[97vh] flex flex-col  justify-center">
         <div className=" z-10 pt-6 pb-8  ">
           <PageTitle>Contact</PageTitle>
         </div>
 
-        <p className="z-10 text-lg leading-7 text-gray-500 dark:text-gray-400 xl:text-xl my-7">
+        <p className="z-10 text-lg leading-7 text-gray-700 dark:text-gray-300 xl:text-xl my-7">
           Please contact me directly at{" "}
           <a
             href={`mailto:valentineremia@yahoo.com`}
@@ -58,24 +60,15 @@ export default function ContactPage({}: Props) {
         </p>
 
         <form
-          className="mb-14 flex flex-col dark:text-black"
-          ref={formRef} // Adăugați referința la formular 
+          className="mb-14 flex flex-col text-black dark:text-slate-200"
+          ref={formRef} 
           onSubmit={handleSubmit}
 
 
-          // action={async (formData) => {
-          //   const { data, error } = await sendEmail(formData);
-
-          //   if (error) {
-          //     toast.error(error);
-          //     return;
-          //   } else {
-          //     toast.success("Email sent successfully!");
-          //   }
-          // }}
+          
         >
           <input
-            className="h-14 px-4 border-[1px] rounded-lg border-zinc-300  dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            className="h-14 px-4 border-[1px] bg-white/70 rounded-lg border-zinc-400 dark:border-zinc-700  dark:bg-slate-950/30 dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
             name="senderEmail"
             type="email"
             required
@@ -83,7 +76,7 @@ export default function ContactPage({}: Props) {
             placeholder="Your email"
           />
           <input
-            className="h-14 px-4 border-[1px] rounded-lg border-zinc-300  dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none my-4"
+            className="h-14 px-4 border-[1px] bg-white/70 rounded-lg border-zinc-400 dark:border-zinc-700   dark:bg-slate-950/30 dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none my-4"
             name="subject"
             type="text"
             required
@@ -91,7 +84,7 @@ export default function ContactPage({}: Props) {
             placeholder="Subject"
           />
           <textarea
-            className="  h-52 mb-5 rounded-lg border-[1px]  border-zinc-300  p-4 dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            className="  h-52 mb-5 rounded-lg bg-white/70 border-[1px] p-4 border-zinc-400 dark:border-zinc-700   dark:bg-slate-950/30 dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
             name="message"
             placeholder="Your message"
             required
@@ -99,6 +92,8 @@ export default function ContactPage({}: Props) {
           />
           <SubmitBtn />
         </form>
+
+      
       </section>
     </Container>
   );

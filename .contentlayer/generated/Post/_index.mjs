@@ -2,6 +2,7 @@
 
 import assasinsCreedValhallaMdx from './assasins-creed-valhalla.mdx.json' assert { type: 'json' }
 import buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx from './building-a-simple-animated-accordion-component-with-tailwind-css.mdx.json' assert { type: 'json' }
+import codeSnippetOnMdxBlogPostMdx from './code-snippet-on-mdx-blog-post.mdx.json' assert { type: 'json' }
 import guideToUsingImagesInNextjsMdx from './guide-to-using-images-in-nextjs.mdx.json' assert { type: 'json' }
 import learningWebDevelopmentTogetherWithARealProjectMdx from './learning-web-development-together-with-a-real-project.mdx.json' assert { type: 'json' }
 import theLastOfUsMdx from './the-last-of-us.mdx.json' assert { type: 'json' }
@@ -9,4 +10,4 @@ import topFamousAppsBuiltWithFlutterFrameworkMdx from './top-famous-apps-built-w
 import troutLuresHandMadeMdx from './trout-lures-hand-made.mdx.json' assert { type: 'json' }
 import whyNextjsIsTheFutureMdx from './why-nextjs-is-the-future.mdx.json' assert { type: 'json' }
 
-export const allPosts = [assasinsCreedValhallaMdx, buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx, guideToUsingImagesInNextjsMdx, learningWebDevelopmentTogetherWithARealProjectMdx, theLastOfUsMdx, topFamousAppsBuiltWithFlutterFrameworkMdx, troutLuresHandMadeMdx, whyNextjsIsTheFutureMdx]
+export const allPosts = [assasinsCreedValhallaMdx, buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx, codeSnippetOnMdxBlogPostMdx, guideToUsingImagesInNextjsMdx, learningWebDevelopmentTogetherWithARealProjectMdx, theLastOfUsMdx, topFamousAppsBuiltWithFlutterFrameworkMdx, troutLuresHandMadeMdx, whyNextjsIsTheFutureMdx]

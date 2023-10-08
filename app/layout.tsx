@@ -25,8 +25,9 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <Header />
           <ScrollTop />
-
+          
           {children}
+         
 
           <hr className="border-gray-300 dark:border-gray-800 w-full" />
           <Toaster position="top-right" />

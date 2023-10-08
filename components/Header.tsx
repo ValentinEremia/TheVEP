@@ -5,6 +5,7 @@ import Link from "./CustomLink";
 import { useEffect, useState } from "react";
 import MenuButton from "./MenuButton";
 import ThemeSwitch from "./ThemeSwitch";
+import { FaFacebook, FaGithub, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 // import siteMetadata from '@/data/siteMetadata'
 // import MyLogo from '@/public/static/logo.svg'
 
@@ -39,6 +40,70 @@ function useToggleMenu() {
   };
   return [menuShow, onMenuToggle] as const;
 }
+
+
+
+
+
+const social_links = [
+  {
+    icon: (
+      <FaGithub
+        className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
+		transition-all duration-300 ease-out hover:scale-125"
+      />
+    ),
+    url: "https://github.com/ValentinEremia",
+  },
+  {
+    icon: (
+      <FaTwitter
+        className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
+		transition-all duration-300 ease-out hover:scale-125"
+      />
+    ),
+    url: "https://twitter.com/Valenti3112",
+  },
+  {
+    icon: (
+      <FaInstagram
+        className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
+		transition-all duration-300 ease-out hover:scale-125"
+      />
+    ),
+    url: "https://www.instagram.com/licanianul",
+  },
+  {
+    icon: (
+      <FaYoutube
+        className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
+		transition-all duration-300 ease-out hover:scale-125"
+      />
+    ),
+    url: "https://www.youtube.com/user/licanianul",
+  },
+  {
+    icon: (
+      <FaFacebook
+        className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
+		transition-all duration-300 ease-out hover:scale-125"
+      />
+    ),
+
+    url: "https://www.facebook.com/valentin.eremia.5095",
+  },
+  // {
+  //   icon: (
+  //     <MdMarkEmailUnread
+  //       className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
+	// 	transition-all duration-500 ease-out hover:scale-110"
+  //     />
+  //   ),
+
+  //   url: "mailto:valentineremia@yahoo.com",
+  // },
+  
+];
 
 export default function Header() {
   const [menuShow, onMenuToggle] = useToggleMenu();
@@ -87,19 +152,38 @@ export default function Header() {
           menuShow ? "translate-x-0" : " -translate-x-full"
         } backdrop-filter bg-opacity-30 dark:bg-opacity-30 backdrop-saturate-150 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100`}
       >
-        <nav className="h-full mt-8 space-y-8">
+        <nav className="h-screen mt-5 space-y-8">
+        <div className="flex flex-col divide-y divide-zinc-400/50 p-6   text-2xl font-semibold dark:divide-zinc-600/50">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12">
+            <div key={link.title} className="p-4">
               <Link
                 href={link.href}
                 title={link.title}
-                className="text-xl font-semibold leading-8 tracking-wide text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+                className="text-2xl font-semibold leading-8 tracking-wide text-gray-700 dark:hover:text-gray-300 hover:text-black dark:text-white"
                 onClick={onMenuToggle}
               >
                 {link.title}
               </Link>
             </div>
           ))}
+          </div>
+
+<div className="fixed bottom-36 flex w-full flex-row justify-center gap-8">
+{social_links &&
+                social_links.map((link, index) => {
+                  return (
+                    <a
+                      key={index}
+                      href={link.url}
+                      target="_blank"
+                      className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer text-gray-900 dark:text-gray-200 dark:hover:text-primary-500  
+										transition-all duration-500 ease-out hover:scale-125 hover:text-primary-500"
+                    >
+                      {link.icon}
+                    </a>
+                  );
+                })}
+				</div>
         </nav>
       </div>
     </>

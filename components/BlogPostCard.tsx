@@ -1,7 +1,6 @@
 "use client"
  
-
- 
+import {motion} from 'framer-motion'
 import CustomLink from "./CustomLink"
  
  
@@ -26,7 +25,11 @@ const BlogPostCard = ({ link, image, title, summary }: Props) => {
       className="z-10 p-4 mx-auto  sm:w-1/2 max-w-[34rem]"
       showIcon={false}
     >
-      <div className=" post-card h-full overflow-hidden border-2 border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400">
+      <motion.div className=" post-card h-full overflow-hidden border-2 border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400"
+      initial="initial"
+      whileInView="animate"
+      variants={PreviewAnimation}
+      >
         <img
           alt={title}
           src={image}
@@ -62,8 +65,26 @@ const BlogPostCard = ({ link, image, title, summary }: Props) => {
           <p className="mb-3 prose text-gray-500 max-w-none dark:text-gray-400">{summary}</p>
           
         </div>
-      </div>
+      </motion.div>
     </CustomLink>
 	)
 }
+
+const PreviewAnimation = {
+  initial: {
+    y: 30,
+    opacity: 0,
+    scale: 0.9,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    transition: {
+      ease: [0.6, 0.01, 0.05, 0.95],
+      duration: 0.8,
+    },
+  },
+};
+
 export default BlogPostCard

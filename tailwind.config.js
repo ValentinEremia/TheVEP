@@ -192,18 +192,20 @@ module.exports = {
             "h4,h5,h6": {
               color: theme("colors.gray.900"),
             },
+             
             code: {
-              color: theme("colors.green.500"),
-              backgroundColor: theme("colors.gray.100"),        
+              color: theme("colors.gray.700"),
+              backgroundColor: theme("colors.neutral.200"),      
               paddingLeft: "4px",
               paddingRight: "4px",
               paddingTop: "2px",
               paddingBottom: "2px",
-              borderRadius: "0.25rem",
-              border:"2px",
-              borderColor: theme("colors.green.500"),
+              // borderRadius: "0.25rem",
+              // borderColor: theme("colors.gray.400"),
+              // borderWeight:'2px'
+             
             },
-            "code:before": {
+            "code:before ":{
               content: "none",
             },
             "code:after": {
@@ -238,7 +240,7 @@ module.exports = {
               "&:hover": {
                 color: theme("colors.primary.400"),
               },
-              code: { color: theme("colors.primary.400") },
+              code: { color: theme("colors.primary.800") },
             },
             h1: {
               fontWeight: "700",
@@ -257,8 +259,10 @@ module.exports = {
             "h4,h5,h6": {
               color: theme("colors.gray.100"),
             },
+            
             code: {
-              backgroundColor: theme("colors.gray.800"),
+              color: theme("colors.gray.300"),
+              backgroundColor: theme("colors.neutral.800"),
             },
             hr: { borderColor: theme("colors.gray.700") },
             "ol li:before": {

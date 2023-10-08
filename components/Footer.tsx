@@ -19,6 +19,7 @@ const social_links = [
       />
     ),
     url: "https://github.com/ValentinEremia",
+    alt:"Github icon link",
   },
   {
     icon: (
@@ -28,6 +29,7 @@ const social_links = [
       />
     ),
     url: "https://twitter.com/Valenti3112",
+    alt:"Twitter icon link",
   },
   {
     icon: (
@@ -37,6 +39,7 @@ const social_links = [
       />
     ),
     url: "https://www.instagram.com/licanianul",
+    alt:"Instagram icon link",
   },
   {
     icon: (
@@ -46,6 +49,7 @@ const social_links = [
       />
     ),
     url: "https://www.youtube.com/user/licanianul",
+    alt:"Youtube icon link",
   },
   {
     icon: (
@@ -56,6 +60,7 @@ const social_links = [
     ),
 
     url: "https://www.facebook.com/valentin.eremia.5095",
+    alt:"Facebook icon link",
   },
   // {
   //   icon: (
@@ -131,11 +136,13 @@ export default function Footer() {
                     <a
                       key={index}
                       href={link.url}
+                      aria-label={link.alt}
                       target="_blank"
                       className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer
 										transition-all duration-500 ease-out hover:scale-125 hover:text-primary-500"
                     >
                       {link.icon}
+                      
                     </a>
                   );
                 })}

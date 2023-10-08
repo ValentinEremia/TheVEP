@@ -1,0 +1,57 @@
+---
+title: How to create a Next.js app
+date: 2023-10-08
+summary: 'Custom components is a great feature of MDX. You can create your own components and use them in your blog posts.'
+image: https://res.cloudinary.com/practicaldev/image/fetch/s--Bu2JwPRH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://i.postimg.cc/sX7F0kRS/Screenshot-2023-04-06-at-11-16-12-PM.png 
+---
+
+## Install Next.js
+
+### First, install Next.js using the following command:
+
+<CodeSnippet text="npx create-next-app@latest" />
+ 
+
+
+[Build a blog app with new Next.js 13 app folder and Contentlayer](https://dev.to/arshadyaseen/build-a-blog-app-with-new-nextjs-13-app-folder-and-contentlayer-2d6h)
+
+<CodeSnippet text="https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-themes" />
+
+We then define a `aws_ec2_client_vpn_endpoint` resource:
+
+```jsx
+resource "aws_ec2_client_vpn_endpoint" "vpn" {
+  description       = "PowerBI VPN"
+  client_cidr_block = "10.0.0.0/22"
+  split_tunnel      = true
+
+  server_certificate_arn = aws_acm_certificate.server.arn
+
+  connection_log_options {
+    enabled = false
+  }
+
+  authentication_options {
+    type                       = "certificate-authentication"
+    root_certificate_chain_arn = aws_acm_certificate.client.arn
+  }
+
+  dns_servers = [
+    "1.1.1.1",
+    "8.8.8.8",
+  ]
+}
+```
+
+Where we use `split_tunnel` to ensure only RDS traffic gets routed through the VPN. We don’t want to pay the data transfer costs for all other traffic!
+
+We also need an authorisation rule:
+
+```jsx
+resource "aws_ec2_client_vpn_authorization_rule" "default" {
+  client_vpn_endpoint_id = aws_ec2_client_vpn_endpoint.vpn.id
+  target_network_cidr    = "10.0.0.0/16"
+  authorize_all_groups   = true
+}
+```
+ ##  The End 👋

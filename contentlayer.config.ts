@@ -1,7 +1,8 @@
+ 
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeSlug from "rehype-slug/lib";
-import remarkGfm from "remark-gfm";
+import rehypePrettyCode from "rehype-pretty-code";
+ 
+ 
 
 const Post = defineDocumentType(() => ({
   name: "Post",
@@ -37,17 +38,32 @@ const Post = defineDocumentType(() => ({
   },
 }));
 
+const rehypeoptions = {
+  // Use one of Shiki's packaged themes
+  theme: 'one-dark-pro',  
+  
+  // Set to true to keep the background color
+  keepBackground: false,
+  onVisitLine(node: any) {
+    if (node.children.length === 0) {
+      node.children = [{ type: "text", value: " " }];
+    }
+  },
+  onVisitHighlightedLine(node: any) {
+    node.properties.className.push("highlighted");
+  },
+  onVisitHighlightedWord(node: any, id: any) {
+    node.properties.className = ["word"];
+  },
+};
+
+
 export default makeSource({
   contentDirPath: "data/blog",
   documentTypes: [Post],
+  mdx: {
+    rehypePlugins: [[rehypePrettyCode, rehypeoptions]],
+  },
   
-  // mdx:{
-  //    remarkPlugins: [
-  //     remarkGfm
-  //    ],
-  //    rehypePlugins: [
-      
-  //     rehypeSlug,
-  //    ]
-  // }
+  
 });

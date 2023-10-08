@@ -2,8 +2,7 @@
 import CustomLink from "@/components/CustomLink";
 import PageTitle from "@/components/PageTitle";
 import React from "react";
-import Image from "next/image";
-import SectionContainer from "@/components/SectionContainer";
+import Image from "next/image"; 
 import siteMetadata from "@/data/siteMetadata";
 import {
   FaGithub,
@@ -12,8 +11,8 @@ import {
   FaYoutube,
   FaFacebook,
 } from "react-icons/fa";
-import { MdMarkEmailUnread } from "react-icons/md";
 import Container from "@/components/Container";
+ 
 
 type Props = {};
 
@@ -69,6 +68,8 @@ const social_links = [
 export default function AboutPage({}: Props) {
   return (
     <Container>
+ 
+			 
       <div className="pt-6 pb-8 space-y-2 md:space-y-5">
         <PageTitle>About</PageTitle>
       </div>
@@ -111,14 +112,13 @@ export default function AboutPage({}: Props) {
             This site.
           </h2>
           <p className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
-            Welcome to my home on the internet. This site works as a portfolio,
-            a place to share code and thoughts.
+          Welcome to my digital domain. This site serves as both a portfolio, showcasing my work, and a platform for sharing code and thoughts.
           </p>
           <h2 className="pb-3 text-xl font-bold  tracking-tight text-gray-800 dark:text-gray-200  sm:leading-7 md:text-2xl md:leading-9">
             Credit
           </h2>
           <p className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
-            I learn how to build this site from the community:
+          I crafted this site with inspiration from the community, drawing from:
           </p>
           <div className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
             <ul className="list-disc   ml-6">
@@ -129,16 +129,16 @@ export default function AboutPage({}: Props) {
                 >
                  Timothy's Next.js and Tailwind CSS template
                 </CustomLink>
-                : Template starter where I bootstrapped the project.
+                {" "}: as a foundation.
               </li>
-              <li className="mt-2">
+              <li className="mt-2"> I also incorporated features from {" "}
                 <CustomLink
                   className="text-violet-700 dark:text-violet-500"
                   href="https://leerob.io/"
                 >
                   Lee Robinson
-                </CustomLink>
-                : Guestbook, Spotify, and many other features.
+                </CustomLink>{" "}
+                : Guestbook and Spotify integration.
               </li>
             </ul>
           </div>
@@ -147,13 +147,10 @@ export default function AboutPage({}: Props) {
           </h2>
           <div className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
             <p className="py-2">
-              Passionate, enthusiastic and curious in search of challenges and
-              opportunities to help me develop technically, socially and
-              culturally.
+            I am a passionate, enthusiastic, and curious individual, constantly seeking challenges and opportunities for personal and professional growth.
             </p>{" "}
             <p className="py-2">
-              I studied at the Valahia University of Târgoviște, specializing in
-              Electronic , with Master Degree specialization in Advanced
+            My academic background includes studying Electronic Engineering at Valahia University of Târgoviște, with Master Degree specialization in Advanced
               Automation, Production and Industrial Informatics.
             </p>
             <p className="py-2">
@@ -162,9 +159,10 @@ export default function AboutPage({}: Props) {
               mistakes, trying to fix the mistake and not repeat it.
             </p>
           </div>
+           
           <div className="mt-14">
             <p className="text-gray-400 dark:text-gray-500">
-              Last updated at 12-03-2023
+              Last updated at 12-10-2023
             </p>
           </div>
         </div>

@@ -1,3 +1,4 @@
+"use client"
 import Container from "@/components/Container";
 import PageTitle from "@/components/PageTitle";
 import PostNotFound from "@/components/PostNotFound";
@@ -5,7 +6,8 @@ import { Post, allPosts } from "contentlayer/generated";
 import { format, parseISO } from "date-fns";
 import { Metadata } from "next";
 import { getMDXComponent } from "next-contentlayer/hooks";
-import 'highlight.js/styles/github-dark.css'
+import {Snippet} from "@geist-ui/core"
+
 
 type Props = {
   params: { slug: string };
@@ -35,6 +37,11 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
     MDXContent = getMDXComponent(post!.body.code);
   }
 
+  const CodeSnippet = (props: any) => (
+    <Snippet {...props} text={props.text} />
+   );
+   
+
   return (
     <div className="  flex flex-col items-center justify-center ">
       <Container>
@@ -49,8 +56,11 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
             {format(parseISO(post.date), "LLLL d, yyyy")}
           </p>
           <img src={post.image} alt={post.title} />
+          {/* <article className=" prose  w-[90vw] md:w-auto  mx-auto">
+            <MDXContent components={{CodeSnippet} }/>
+          </article> */}
           <article className=" prose xl:prose-xl md:prose-lg sm:prose-base dark:prose-dark dark:prose-neutral w-[90vw] md:w-auto  mx-auto">
-            <MDXContent />
+            <MDXContent components={{CodeSnippet}}/>
           </article>
         </div>
       </Container>
