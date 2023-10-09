@@ -6,7 +6,7 @@ import { Post, allPosts } from "contentlayer/generated";
 import { format, parseISO } from "date-fns";
 import { Metadata } from "next";
 import { getMDXComponent } from "next-contentlayer/hooks";
-import {Snippet} from "@geist-ui/core"
+import MyCodeSnippet from "../MyCodeSnippet";
 
 
 
@@ -38,10 +38,11 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
     MDXContent = getMDXComponent(post!.body.code);
   }
 
-  // const CodeSnippet = (props: any) => (
+
+  // const   MyCodeSnippet = (props: any) =>  (
+    
   //   <Snippet {...props} text={props.text} />
   //  );
-   
 
   return (
     <div className="  flex flex-col items-center justify-center ">
@@ -61,8 +62,8 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
             <MDXContent components={{CodeSnippet} }/>
           </article> */}
           <article className=" prose xl:prose-xl md:prose-lg sm:prose-base dark:prose-dark dark:prose-neutral w-[90vw] md:w-auto  mx-auto">
-            <MDXContent  />
-            {/* <MDXContent components={{CodeSnippet}}/> */}
+            {/* <MDXContent  /> */}
+            <MDXContent components={{ MyCodeSnippet  }}/>
           </article>
         </div>
       </Container>
