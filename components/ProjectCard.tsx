@@ -27,6 +27,7 @@ const ProjectCard = ({ link, image, title, description }: Props) => {
     >
       <motion.div className="project-card h-full overflow-hidden border-2 border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400"
       initial="initial"
+      viewport={{once:true}}
       whileInView="animate"
       variants={PreviewAnimation}
       >

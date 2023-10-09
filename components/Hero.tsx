@@ -24,7 +24,7 @@ const Hero = (props: Props) => {
             </PageTitle>
            
              
-            <p className="text-lg leading-7 prose text-gray-500 max-w-none dark:text-gray-400">A passionate mobile and web app developer with one year of programming experience. I specialize in front-end and system design. Let's collaborate and bring your ideas to life! <br />
+            <p className="text-lg leading-7 prose text-gray-500 max-w-none dark:text-gray-400">A mobile and web developer with a strong focus in front-end and system design. <br />Let's collaborate and bring your ideas to life! <br />
               <Link
                 href={`/contact`}
                 className="font-medium leading-6 text-violet-500 dark:hover:text-violet-300 transition-color duration-500 "

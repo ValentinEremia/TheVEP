@@ -7,7 +7,10 @@ module.exports = withContentlayer({
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "www.//the-vep.vercel.app",
+        // hostname: "www.//the-vep.vercel.app",
+        hostname: "**",
+        port: "",
+        pathname: "**",
       },
     ],
   },

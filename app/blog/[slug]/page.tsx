@@ -7,6 +7,7 @@ import { format, parseISO } from "date-fns";
 import { Metadata } from "next";
 import { getMDXComponent } from "next-contentlayer/hooks";
 import MyCodeSnippet from "../MyCodeSnippet";
+import Image from 'next/image'
 
 
 
@@ -57,7 +58,9 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
           <p className=" text-slate-500 ">
             {format(parseISO(post.date), "LLLL d, yyyy")}
           </p>
-          <img src={post.image ||''} alt={post.title} />
+          {/* <img src={post.image ||''} alt={post.title} /> */}
+          <Image src={post.image||''} alt={post.title}  width={544}
+          height={306}/>
           {/* <article className=" prose  w-[90vw] md:w-auto  mx-auto">
             <MDXContent components={{CodeSnippet} }/>
           </article> */}

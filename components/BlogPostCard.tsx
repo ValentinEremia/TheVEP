@@ -2,6 +2,7 @@
  
 import {motion} from 'framer-motion'
 import CustomLink from "./CustomLink"
+import Image from 'next/image'
 
  
  
@@ -28,24 +29,25 @@ const BlogPostCard = ({ link, image, title, summary }: Props) => {
     >
       <motion.div className=" post-card h-full overflow-hidden border-2 border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400"
       initial="initial"
+      viewport={{once:true}}
       whileInView="animate"
       variants={PreviewAnimation}
       >
-        <img
+        {/* <img
           alt={title||''}
           src={image||''}
           className="object-cover object-center   lg:h-48 md:h-36 "
           width={544}
           height={306}
            
-        />
-        {/* <Image
-          alt={title}
-          src={image}
+        /> */}
+        <Image
+          alt={title||''}
+          src={image||''}
           className="object-cover object-center border-b border-gray-800 border-solid lg:h-48 md:h-36 "
           width={544}
           height={306}
-        /> */}
+        />
         <div className="p-6">
           <h4 className="mb-3 text-2xl font-bold leading-8 tracking-tight text-black dark:text-white">
             {title}
@@ -86,6 +88,7 @@ const PreviewAnimation = {
       duration: 0.8,
     },
   },
+  
 };
 
 export default BlogPostCard
