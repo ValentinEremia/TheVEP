@@ -30,7 +30,7 @@ ___
 
 Let’s kick things off with a **new HTML document**. To keep it simple, we’ll import Tailwind CSS using the CDN. Here’s the snippet:  
 
-```
+```html
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -70,7 +70,7 @@ Enter fullscreen mode Exit fullscreen mode
 
 Now, let’s replace that comment with the accordion code. Here’s what it looks like:  
 
-```
+```html
   <div>
       <!-- Accordion item -->
       <div>
@@ -96,7 +96,7 @@ We’ve kept the HTML structure simple and lightweight. Each accordion item cons
 
 Let’s proceed by **adding some style** with Tailwind CSS classes, and an **SVG icon** to indicate whether each accordion item is open or closed:  
 
-```
+```html
   <div class="divide-y divide-slate-200">
       <!-- Accordion item -->
       <div class="py-2">
@@ -142,7 +142,7 @@ Then, we’ll make the following implementations:
 -   We’ll manage the Tailwind classes on the SVG icon, so that it smoothly transitions from a plus symbol to a minus symbol when the accordion item opens.
 -   Based on the value of the `expanded` variable, we’ll show or hide the accordion item’s content using the `x-show` directive.
 
-```
+```jsx
   <div class="divide-y divide-slate-200">
       <!-- Accordion item -->
       <div x-data="{ expanded: false }" class="py-2">
@@ -190,7 +190,7 @@ I’m talking about using **CSS grid**. Yes, you heard it right! It’s a trick 
 
 Let’s see how it works:  
 
-```
+```jsx
   <div
       id="faqs-text-01"
       role="region"
@@ -225,7 +225,7 @@ To make the accordion fully accessible, we need to implement the following integ
 -   Next, we’ll add the `aria-controls` attribute to the same button. This attribute will be linked to the ID of the HTML element containing the content of the accordion item. It helps establish the relationship between the button and its associated content.
 -   Finally, we’ll add the `aria-labelledby` attribute to the HTML element containing the accordion item’s content. This attribute will be linked to the ID of the button that serves as the title for the accordion item, creating a link between the content and its corresponding title.
 
-```
+```jsx
   <div class="divide-y divide-slate-200">
       <!-- Accordion item -->
       <div x-data="{ expanded: false }" class="py-2">
@@ -276,7 +276,7 @@ If you’re working with Next.js, you can take advantage of the HTML code we’v
 
 Let’s walk through the process of converting the HTML code into a React component:  
 
-```
+```jsx
   'use client'
   import { useState, useEffect } from 'react'
   export default function Accordion() {
@@ -323,7 +323,7 @@ As you can see, we’ve defined a variable called `accordionOpen`, which will ke
 
 Now, this component can be easily used on any Next.js page by simply importing and rendering it like this:  
 
-```
+```jsx
   <Accordion />
 ```
 
@@ -331,7 +331,7 @@ Enter fullscreen mode Exit fullscreen mode
 
 It works beautifully! However, you may need to use this accordion component on multiple pages, and in that case, it’s helpful to **turn it into a reusable component**. To achieve this, we can **add props** to the component, allowing us to define the title, ID, and content of each accordion item. Additionally, we’ve introduced an `active` prop, enabling us to specify whether the accordion item should be open or closed by default.  
 
-```
+```jsx
   'use client'
   import { useState, useEffect } from 'react'
   type AccordionpProps = {
@@ -387,7 +387,7 @@ Enter fullscreen mode Exit fullscreen mode
 
 To use the component, you simply need to import it into a parent component and pass the necessary props. Here’s an example of how to use it:  
 
-```
+```jsx
   export const metadata = {
     title: 'Animated Accordion - Cruip Tutorials',
     description: 'Page description',
@@ -460,7 +460,7 @@ If you’re working with Vue, creating an accordion component is straightforward
 
 Let’s take a look at the code for the initial Vue accordion component:  
 
-```
+```html
   <script setup lang="ts">
   import { ref, onMounted } from 'vue'
   const accordionOpen = ref<boolean>(false)
@@ -508,7 +508,7 @@ As you can see, we’ve defined the `accordionOpen` variable using the `ref` fun
 
 This component can be conveniently used on any Vue page by importing and including it like this:  
 
-```
+```jsx
   <Accordion />
 ```
 
@@ -516,7 +516,7 @@ Enter fullscreen mode Exit fullscreen mode
 
 Now, let’s proceed to transform this component into a **fully reusable** one, just as we did for the React version. We’ll make the same modifications, creating a Vue counterpart of the reusable accordion component:  
 
-```
+```html
   <script setup lang="ts">
   import { ref, onMounted } from 'vue'
   const accordionOpen = ref<boolean>(false)
@@ -569,7 +569,7 @@ By adding props to the component, we can now define the title, ID, and content o
 
 To use the reusable Vue accordion component, import it into a parent component, and pass the necessary props like this:  
 
-```
+```html
   <script setup lang="ts">
   import Accordion from '../components/Accordion.vue'
   const faqs = [
