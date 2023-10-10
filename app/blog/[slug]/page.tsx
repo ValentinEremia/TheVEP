@@ -1,4 +1,5 @@
 
+"use client"
 import Container from "@/components/Container";
 import PageTitle from "@/components/PageTitle";
 import PostNotFound from "@/components/PostNotFound";
@@ -8,6 +9,8 @@ import { Metadata } from "next";
 import { getMDXComponent } from "next-contentlayer/hooks";
 import MyCodeSnippet from "../MyCodeSnippet";
 import Image from 'next/image'
+import ProgressBar from "@/components/ProgressBar";
+import BackButton from "@/components/BackButton";
 
 
 
@@ -45,14 +48,27 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
   //   <Snippet {...props} text={props.text} />
   //  );
 
+  
+
+  
+
   return (
+    <>
+   <ProgressBar/>
+    
     <div className="  flex flex-col items-center justify-center ">
+
+      
+
       <Container>
         <div className="my-3">
+
+       <BackButton/>
 
           <div className="md:mt-10 text-center">
             <PageTitle>{post.title}</PageTitle>
           </div>
+         
 
           <br />
           <p className=" text-slate-500 ">
@@ -71,7 +87,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
         </div>
       </Container>
       <br />
-    </div>
+    </div></>
   );
 };
 

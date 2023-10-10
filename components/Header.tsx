@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import MenuButton from "./MenuButton";
 import ThemeSwitch from "./ThemeSwitch";
 import { FaFacebook, FaGithub, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+
 // import siteMetadata from '@/data/siteMetadata'
 // import MyLogo from '@/public/static/logo.svg'
 
@@ -111,41 +112,48 @@ export default function Header() {
 
   return (
     <>
+
       <header
         className={`w-full sticky z-20 top-0 flex items-center justify-between py-4  ${
           isTop ? "border-none" : "border-b border-gray-200 dark:border-gray-800"
         } bg-white dark:bg-black bg-opacity-30 dark:bg-opacity-30 backdrop-filter backdrop-saturate-150 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100`}
       >
+          
         <nav className="flex items-center justify-between w-full max-w-2xl px-4 mx-auto sm:px-6 sm:py-1 md:max-w-3xl xl:max-w-4xl xl:px-0">
         
          
           
          
       
-          <div className="flex items-center text-base leading-5">
-            
-            <div className="hidden sm:block sm:space-x-8">
-              {headerNavLinks
-                
-                .map((link) => (
-                  <Link
-                    key={link.title}
-                    title={link.title}
-                    href={link.href}
-                    className="font-medium text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
-                  >
-                    {link.title}
-                  </Link>
-                ))}
-            </div>
-            <div className="flex items-center sm:hidden">
-              <MenuButton onClick={onMenuToggle} isOpened={menuShow} />
-            </div>
-          </div>
-          <ThemeSwitch />
+        <div className="flex items-center text-base leading-5">
           
-        </nav>
-      </header>
+          <div className="hidden sm:block sm:space-x-8">
+            {headerNavLinks
+              
+              .map((link) => (
+                <Link
+                  key={link.title}
+                  title={link.title}
+                  href={link.href}
+                  className="font-medium text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+                >
+                  {link.title}
+                </Link>
+              ))}
+          </div>
+          <div className="flex items-center sm:hidden">
+            <MenuButton onClick={onMenuToggle} isOpened={menuShow} />
+          </div>
+        </div>
+        <ThemeSwitch />
+        
+      </nav>
+
+    
+     
+    </header>
+         
+
       {/* Mobile side menu */}
       <div
         className={`sm:hidden fixed w-full h-screen right-0 bg-white dark:bg-black z-20 transform ease-in-out duration-500 ${
