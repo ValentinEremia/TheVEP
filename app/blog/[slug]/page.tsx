@@ -1,5 +1,5 @@
 
-"use client"
+
 import Container from "@/components/Container";
 import PageTitle from "@/components/PageTitle";
 import PostNotFound from "@/components/PostNotFound";
