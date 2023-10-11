@@ -15,7 +15,7 @@ function BlogPage() {
     <Container>
        
     <div className=" z-10 pt-6 pb-8 space-y-2 md:space-y-5">
-      <PageTitle>Latest Posts</PageTitle>
+      <PageTitle>Blog</PageTitle>
     </div>
  
     <div className="container py-8 md:py-12">

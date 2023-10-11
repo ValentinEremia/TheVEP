@@ -385,10 +385,10 @@ article img {
   @apply text-purple-500;
 }
 
-code[class*="language-"],
+ code[class*="language-"],
 pre[class*="language-"] {
   @apply text-neutral-800 dark:text-neutral-200;
-}
+} 
 
 blockquote p {
   @apply font-mono;
@@ -406,3 +406,4 @@ blockquote p::before {
 .prose pre code {
   border: initial;
 }
+

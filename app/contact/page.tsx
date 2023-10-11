@@ -41,12 +41,13 @@ export default function ContactPage({}: Props) {
   return (
     <Container>
       
-      <section className="md:h-[92vh] lg:h-[97vh] flex flex-col  justify-center">
-        <div className=" z-10 pt-6 pb-8  ">
+     
+        <div    className=" z-10 pt-6 pb-8 space-y-2 md:space-y-5">
+        {/* <div    className=" z-10 py-5 sm:pt-6 sm:pb-8 space-y-2 md:space-y-5"> */}
           <PageTitle>Contact</PageTitle>
         </div>
-
-        <p className="z-10 text-lg leading-7 text-gray-700 dark:text-gray-300 xl:text-xl my-7">
+ <section className=" flex flex-col  justify-center">
+        <p className="z-10 text-lg leading-7 text-gray-700 dark:text-gray-300 xl:text-xl mb-7">
           Please contact me directly at{" "}
           <a
             href={`mailto:valentineremia@yahoo.com`}

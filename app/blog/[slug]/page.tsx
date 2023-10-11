@@ -1,5 +1,3 @@
-
-
 import Container from "@/components/Container";
 import PageTitle from "@/components/PageTitle";
 import PostNotFound from "@/components/PostNotFound";
@@ -7,12 +5,10 @@ import { Post, allPosts } from "contentlayer/generated";
 import { format, parseISO } from "date-fns";
 import { Metadata } from "next";
 import { getMDXComponent } from "next-contentlayer/hooks";
-import MyCodeSnippet from "../MyCodeSnippet";
-import Image from 'next/image'
+import Image from "next/image";
 import ProgressBar from "@/components/ProgressBar";
 import BackButton from "@/components/BackButton";
-
-
+import CodeSnippet from "@/components/CodeSnippet";
 
 type Props = {
   params: { slug: string };
@@ -42,52 +38,43 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
     MDXContent = getMDXComponent(post!.body.code);
   }
 
-
-  // const   MyCodeSnippet = (props: any) =>  (
-    
-  //   <Snippet {...props} text={props.text} />
-  //  );
-
-  
-
-  
-
   return (
     <>
-   <ProgressBar/>
-    
-    <div className="  flex flex-col items-center justify-center ">
+      <ProgressBar />
 
-      
+      <div className="  flex flex-col items-center justify-center ">
+        <Container>
+          <div className="my-3">
+            
+            <BackButton />
 
-      <Container>
-        <div className="my-3">
+            <div className="md:mt-10 text-center">
+              <PageTitle>{post.title}</PageTitle>
+            </div>
 
-       <BackButton/>
-
-          <div className="md:mt-10 text-center">
-            <PageTitle>{post.title}</PageTitle>
-          </div>
-         
-
-          <br />
-          <p className=" text-slate-500 ">
-            {format(parseISO(post.date), "LLLL d, yyyy")}
-          </p>
-          {/* <img src={post.image ||''} alt={post.title} /> */}
-          <Image src={post.image||''} alt={post.title}  width={544}
-          height={306}/>
-          {/* <article className=" prose  w-[90vw] md:w-auto  mx-auto">
+            <br />
+            <p className=" text-slate-500 ">
+              {format(parseISO(post.date), "LLLL d, yyyy")}
+            </p>
+            {/* <img src={post.image ||''} alt={post.title} /> */}
+            <Image
+              src={post.image || ""}
+              alt={post.title}
+              width={544}
+              height={306}
+            />
+            {/* <article className=" prose  w-[90vw] md:w-auto  mx-auto">
             <MDXContent components={{CodeSnippet} }/>
           </article> */}
-          <article className=" prose xl:prose-xl md:prose-lg sm:prose-base dark:prose-dark dark:prose-neutral w-[90vw] md:w-auto  mx-auto">
-            {/* <MDXContent  /> */}
-            <MDXContent components={{ MyCodeSnippet  }}/>
-          </article>
-        </div>
-      </Container>
-      <br />
-    </div></>
+            <article className=" prose xl:prose-xl md:prose-lg sm:prose-base dark:prose-dark dark:prose-neutral w-[90vw] md:w-auto  mx-auto">
+              {/* <MDXContent  /> */}
+              <MDXContent components={{ CodeSnippet }} />
+            </article>
+          </div>
+        </Container>
+        <br />
+      </div>
+    </>
   );
 };
 

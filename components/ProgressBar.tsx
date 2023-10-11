@@ -9,7 +9,7 @@ function ProgressBar() {
   let progressBarWidth=useTransform(scrollYProgress, [0,1], ['0%', '100%']);
 
   return (
-    <motion.div style={{width: progressBarWidth}} className="sticky z-40 md:top-[58px] top-[61px] left-0 h-[2px] bg-violet-700/80"/>
+    <motion.div style={{width: progressBarWidth}} className="sticky z-40 sm:top-[60px] md:top-[59px]   top-[63px] left-0 h-[2px] bg-primary-600"/>
   )
 }
 

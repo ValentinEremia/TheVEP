@@ -175,6 +175,9 @@ module.exports = {
               },
               code: { color: theme("colors.primary.400") },
             },
+            p:{
+              fontSize:"1.12rem",
+            },
             h1: {
               fontWeight: "700",
               letterSpacing: theme("letterSpacing.tight"),
@@ -188,6 +191,9 @@ module.exports = {
             h3: {
               fontWeight: "600",
               color: theme("colors.gray.900"),
+            },
+            h4: {
+              fontSize:"1.25rem",
             },
             "h4,h5,h6": {
               color: theme("colors.gray.900"),
