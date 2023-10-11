@@ -10,12 +10,12 @@ const Hero = (props: Props) => {
   return ( 
     <Container> 
       <div className="flex flex-col items-center justify-around h-fit w-full ">
-        <div className="flex items-center justify-center sm:h-[95vh] h-[65vh]">
+        <div className="flex items-center justify-center sm:h-[80vh] h-[65vh]">
           <VercelHeroText />
         </div>
 
-        <div className="pb-10">
-          <div className=" space-y-2 md:space-y-5">
+        <div className="lg:mt-20 pb-10">
+          <div className=" space-y-3 md:space-y-5 lg:space-y-8">
             <PageTitle>
               Hey! I'm Valentin{" "}
               <span role="img" aria-label="waving hand" className="wave">
