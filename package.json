@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons-react": "2.30.0",
+    "react-wrap-balancer": "^1.1.0",
     "@geist-ui/core": "^2.3.8",
     "@headlessui/react": "^1.7.13",
     "@opentelemetry/api": "^1.4.1",

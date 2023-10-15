@@ -1,6 +1,7 @@
 "use client";
 
-import siteMetadata from "@/data/siteMetadata";
+ 
+import { IconArrowUp } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 
 const ScrollTop = () => {
@@ -22,22 +23,18 @@ const ScrollTop = () => {
 
   return (
     <div
-      className={`fixed bottom-8 right-8  flex-col gap-3 ${
+      className={`fixed bottom-8 right-8 z-10 flex-col gap-3 ${
         show ? " flex" : " hidden"
       }`}
     >
       <button
+      type="button"
         aria-label="Scroll To Top"
         onClick={handleScrollTop}
-        className="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
+        className="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/10 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/20 dark:hover:border-zinc-700 dark:hover:ring-white/20  lg:-left-5 lg:mb-0  xl:left-0 xl:mt-0"
       >
-        <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path
-            fillRule="evenodd"
-            d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
-            clipRule="evenodd"
-          />
-        </svg>
+         
+    < IconArrowUp className="h-5 w-5 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400" />
       </button>
     </div>
   );

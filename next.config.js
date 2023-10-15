@@ -1,7 +1,7 @@
 const { withContentlayer } = require("next-contentlayer");
 
 module.exports = withContentlayer({
-  experimental: { appDir: true, serverActions: true },
+  experimental: { serverActions: true },
 
   images: {
     remotePatterns: [
@@ -13,5 +13,6 @@ module.exports = withContentlayer({
         pathname: "**",
       },
     ],
+    deviceSizes: [320, 448, 640, 768, 896],
   },
 });

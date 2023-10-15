@@ -3,6 +3,7 @@ import PageTitle from "./PageTitle";
 import Link from "next/link";
 import VercelHeroText from "./VercelHeroText";
 import Container from "./Container";
+import { IconArrowRight } from "@tabler/icons-react";
 
 type Props = {};
 
@@ -25,14 +26,18 @@ const Hero = (props: Props) => {
            
              
             <p className="text-lg leading-7 prose text-gray-500 max-w-none dark:text-gray-400">A mobile and web developer with a strong focus in front-end and system design. <br />Let's collaborate and bring your ideas to life! <br />
+              
+
               <Link
-                href={`/contact`}
-                className="font-medium leading-6 text-violet-500 dark:hover:text-violet-300 transition-color duration-500 "
-                aria-label={`Go to Contact Page`}
-                title={`Contact me`}
-              >
-                Get in touch &rarr;
-              </Link>
+               href={`/contact`}
+              // target="_parent"
+              aria-label={`Go to Contact Page`}
+              title={`Contact me`}
+              className="font-medium leading-6 dark:text-primary-500 hover:text-gray-900 group  transition-colors  text-primary-500  dark:hover:text-primary-300 duration-200"
+            >
+              Get in touch{" "}
+              <IconArrowRight className="inline-block transition-transform ease-in-out group-hover:translate-x-0.5 duration-200" />
+            </Link>
             </p>
           </div>
         </div>
