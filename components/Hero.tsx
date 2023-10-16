@@ -33,7 +33,7 @@ const Hero = (props: Props) => {
               // target="_parent"
               aria-label={`Go to Contact Page`}
               title={`Contact me`}
-              className="font-medium leading-6 dark:text-primary-500 hover:text-gray-900 group  transition-colors  text-primary-500  dark:hover:text-primary-300 duration-200"
+              className="font-medium leading-6 dark:text-primary-500 hover:text-gray-900 group  transition-colors no-underline text-primary-500  dark:hover:text-primary-300 duration-200"
             >
               Get in touch{" "}
               <IconArrowRight className="inline-block transition-transform ease-in-out group-hover:translate-x-0.5 duration-200" />

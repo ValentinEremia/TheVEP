@@ -67,7 +67,7 @@ const PostCard = ({ link, image, title, summary,  date}: Props) => {
           src={image||''}
           alt={title||'post cover-image'}
           fill={true}
-          className="object-cover transition ease-in-out group-hover:scale-105"
+          className="object-cover my-0 transition ease-in-out group-hover:scale-105"
           sizes="(max-width: 896px) 100vw, 896px"
           priority
           

@@ -19,12 +19,13 @@ function LatestPostHeroSection() {
         <Link
           href="/blog"
           target="_parent"
-          aria-label={`Go to Blog Page`}
+          aria-label={`Go to all blog posts`}
           title={`All blog posts`}
-          className="text-xl  dark:text-primary-500 hover:text-gray-900 group ml-8 transition-colors  text-primary-500  dark:hover:text-primary-300 duration-200"
+          className="text-xl  dark:!text-white   group ml-8 transition-all  !text-black hover:font-medium duration-250 ease-in-out"
+          // className="text-xl  dark:!text-primary-500 hover:!text-gray-900 group ml-8 transition-colors  !text-primary-500  dark:hover:!text-primary-300 duration-200"
         >
           View All{" "}
-          <IconArrowRight className="inline-block transition-transform ease-in-out group-hover:translate-x-0.5 duration-200" />
+          {/* <IconArrowRight className="inline-block transition-transform ease-in-out group-hover:translate-x-0.5 duration-200" /> */}
         </Link>
       </div><OrbContainer>
 				<Orb className="h-[25rem] w-[25rem]  right-0 bg-cyan-500/30 dark:bg-fuchsia-800/30" />
