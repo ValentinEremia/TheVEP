@@ -112,33 +112,34 @@ export default function AboutPage({}: Props) {
             This site.
           </h2>
           <p className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
-          Welcome to my digital domain. This site serves as both a portfolio, showcasing my work, and a platform for sharing code and thoughts.
+          Welcome to my digital domain, a space where I showcase my work, share my code, and voice my thoughts.
           </p>
           <h2 className="pb-3 text-xl font-bold  tracking-tight text-gray-800 dark:text-gray-200  sm:leading-7 md:text-2xl md:leading-9">
             Credit
           </h2>
           <p className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
-          I crafted this site with inspiration from the community, drawing from:
+          This site is a product of my passion for learning and creating. I drew inspiration from the community:
           </p>
           <div className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
             <ul className="list-disc   ml-6">
               <li className="mt-2">
+              incorporating elements from : {' '} 
                 <CustomLink
                   className="text-violet-700 dark:text-violet-500"
                   href="https://github.com/timlrx/tailwind-nextjs-starter-blog"
                 >
                  Timothy's Next.js and Tailwind CSS template
                 </CustomLink>
-                {" "}: as a foundation.
+                {" "} 
               </li>
-              <li className="mt-2"> I also incorporated features from {" "}
+              <li className="mt-2"> 
                 <CustomLink
                   className="text-violet-700 dark:text-violet-500"
                   href="https://leerob.io/"
                 >
-                  Lee Robinson
+                  Lee Robinson's
                 </CustomLink>{" "}
-                : Guestbook and Spotify integration.
+                : Spotify integration, and my own unique perspective.
               </li>
             </ul>
           </div>
@@ -147,22 +148,22 @@ export default function AboutPage({}: Props) {
           </h2>
           <div className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
             <p className="py-2">
-            I am a passionate, enthusiastic, and curious individual, constantly seeking challenges and opportunities for personal and professional growth.
+            I am a curious and enthusiastic individual, constantly seeking challenges and opportunities to grow. 
             </p>{" "}
             <p className="py-2">
-            My academic background includes studying Electronic Engineering at Valahia University of Târgoviște, with Master Degree specialization in Advanced
-              Automation, Production and Industrial Informatics.
+            My academic background in Electronic Engineering, with a specialization in Advanced Automation, Production, and Industrial Informatics, has equipped me with the skills and knowledge to tackle complex problems and create innovative solutions.
             </p>
             <p className="py-2">
-              I am an orderly person at home and at work, as I plan all my tasks
-              in advance. I like learning new things. I always take on my
-              mistakes, trying to fix the mistake and not repeat it.
+            At home and at work, I am an orderly person who plans carefully and executes with precision. I am always eager to learn new things and take on new challenges. I view my mistakes as valuable learning experiences, always striving to improve and evolve.
+            </p>
+            <p className="py-2">
+            I invite you to explore my digital domain and discover the world of my work, thoughts, and creations.
             </p>
           </div>
            
           <div className="mt-14">
             <p className="text-gray-400 dark:text-gray-500">
-              Last updated at 12-10-2023
+              Last updated at 28-10-2023
             </p>
           </div>
         </div>

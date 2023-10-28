@@ -48,7 +48,7 @@ export default function ContactPage({}: Props) {
         </div>
  <section className=" flex flex-col  justify-center">
         <p className="z-10 text-lg leading-7 text-gray-700 dark:text-gray-300 xl:text-xl mb-7">
-          Please contact me directly at{" "}
+        The easiest way to get in touch with me is directly at my email address:{" "}
           <a
             href={`mailto:valentineremia@yahoo.com`}
             className="underline font-medium leading-6 text-violet-500 hover:text-violet-900 dark:hover:text-violet-300 transition-color duration-500 "
@@ -57,8 +57,33 @@ export default function ContactPage({}: Props) {
           >
             valentineremia@yahoo.com{" "}
           </a>
-          or through this form.
+          or by using the form below. I guarantee a response to all inquiries within 24 hours.
         </p>
+
+        
+
+        <p className="z-10 text-lg leading-7 text-gray-700 dark:text-gray-300 xl:text-xl mb-7">
+        If you're feeling a bit adventurous, here are some fun ways to reach out:
+          <div className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl">
+            <ul className="list-disc   ml-6">
+              <li className="mt-2">
+              <b>Send me a carrier pigeon with a handwritten note.</b> Who knows, maybe my office is secretly a pigeon sanctuary, and your message will find a cozy home here!
+              </li>
+              <li className="mt-2"> 
+              <b>Shoot a smoke signal into the sky with the message "Valentin, please contact me!"</b> It might sound like a scene from a wild west movie, but hey, if it works for Batman, it can work for us too!
+              </li>
+              <li className="mt-2"> 
+             <b> Wear a sandwich board that reads "Looking for a programming project."</b> I promise I'll keep an eye out for anyone walking around with such a cool sign.
+              </li>
+            </ul>
+          </div>
+        </p>
+ 
+
+        <p className="z-10 text-lg leading-7 text-gray-700 dark:text-gray-300 xl:text-xl mb-7">
+        
+        I look forward to hearing from you and embarking on our creative journey together! Let's make something awesome happen!
+        </p> 
 
         <form
           className="mb-14 flex flex-col text-black dark:text-slate-200"
