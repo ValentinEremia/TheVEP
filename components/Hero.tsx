@@ -12,7 +12,7 @@ const Hero = (props: Props) => {
   return ( 
     <Container> 
    
-      <div className="flex flex-col items-center justify-around  w-full md:h-[118vh] sm:h-[90vh] h-screen lg:max-h-full">
+      <div className="flex flex-col items-center justify-around  w-full md:h-[118vh] sm:h-[90vh] h-[94vh] lg:max-h-full">
         <div className="flex items-center  justify-center ">
           <VercelHeroText />
         </div>
