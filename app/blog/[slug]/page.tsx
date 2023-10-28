@@ -45,7 +45,6 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
       <div className="  flex flex-col items-center justify-center ">
         <Container>
           <div className="my-3">
-            
             <BackButton />
 
             <div className="md:mt-10 text-center">
@@ -57,12 +56,17 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
               {format(parseISO(post.date), "LLLL d, yyyy")}
             </p>
             {/* <img src={post.image ||''} alt={post.title} /> */}
-            <Image
-              src={post.image || ""}
-              alt={post.title}
-              width={544}
-              height={306}
-            />
+
+            <div className="max-w-2xl mx-auto my-6 sm:my-8 rounded-md">
+              <Image
+                src={post.image || ""}
+                alt={post.title}
+                height={200}
+                width={900}
+                 
+                priority
+              />
+            </div>
             {/* <article className=" prose  w-[90vw] md:w-auto  mx-auto">
             <MDXContent components={{CodeSnippet} }/>
           </article> */}

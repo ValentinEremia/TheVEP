@@ -9,6 +9,7 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
+import NowPlaying from "./NowPlaying";
 
 const social_links = [
   {
@@ -163,6 +164,9 @@ export default function Footer() {
             </div>
           </div>
           {/* <ThemeSwitch /> */}
+        </div>
+            <div className="flex justify-center w-full py-2">
+          <NowPlaying />
         </div>
       </div>
     </footer>

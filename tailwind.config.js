@@ -20,6 +20,11 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      spacing: {
+         
+        0.75: "0.1875rem",
+        
+      },
       fontSize: {
         "9xl": "10rem",
       },
@@ -84,6 +89,7 @@ module.exports = {
          900: "#7A0D0A",
         },
 
+        "spotify-green": "#1DB954",
         green: colors.emerald,
         yellow: colors.amber,
         purple: colors.violet,
@@ -101,6 +107,22 @@ module.exports = {
         "gradient-3-end": "#2D00F7",
       },
       keyframes: {
+        shrink: {
+          "0% , 100%": {
+            height: "0.75rem",
+          },
+          "50%": {
+            height: "0.375rem",
+          },
+        },
+        expand: {
+          "0% , 100%": {
+            height: "0.375rem",
+          },
+          "50%": {
+            height: "0.75rem",
+          },
+        },
         "gradient-foreground-1": {
           "from, 16.667%, to": {
             opacity: 1,
@@ -157,6 +179,8 @@ module.exports = {
         },
       },
       animation: {
+        shrink: "shrink 1.5s infinite",
+        expand: "expand 1.5s infinite",
         "gradient-background-1": "gradient-background-1 8s infinite",
         "gradient-foreground-1": "gradient-foreground-1 8s infinite",
         "gradient-background-2": "gradient-background-2 8s infinite",

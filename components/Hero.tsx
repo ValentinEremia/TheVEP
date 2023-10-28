@@ -5,13 +5,14 @@ import VercelHeroText from "./VercelHeroText";
 import Container from "./Container";
 import { IconArrowRight } from "@tabler/icons-react";
 
+
 type Props = {};
 
 const Hero = (props: Props) => {
   return ( 
     <Container> 
-      <div className="flex flex-col items-center justify-around h-fit w-full ">
-        <div className="flex items-center justify-center sm:h-[80vh] h-[65vh]">
+      <div className="flex flex-col items-center justify-around  w-full md:h-[115vh] sm:h-[90vh] h-fit lg:h-full">
+        <div className="flex items-center  justify-center ">
           <VercelHeroText />
         </div>
 

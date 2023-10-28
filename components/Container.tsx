@@ -11,14 +11,14 @@ export default function Container({children}: Props) {
 
     <>
 
-    <OrbContainer>
-				<Orb className="h-[25rem] w-[25rem] lg:top-10 top-20 -right-[10rem] bg-purple-700/30 dark:bg-purple-700/30" />
-				<Orb className="h-[25rem] w-[25rem] -left-20  top-72 bg-fuchsia-400/30 dark:bg-fuchsia-600/20" />
+    <OrbContainer >
+				<Orb className="h-[25rem] w-[25rem] lg:top-10 top-20 right-0 bg-purple-700/30 dark:bg-purple-700/30" />
+				<Orb className="  h-[25rem] w-[25rem] -left-20  top-72 bg-fuchsia-400/30 dark:bg-fuchsia-600/20" />
 			</OrbContainer>
         {children}
 
         <OrbContainer>
-          <Orb className="h-72 w-[20rem] lg:-top-32  md:-top-24 top-0 right-0 bg-cyan-700/30 dark:bg-cyan-700/20" />
+          <Orb className="   h-72 w-[20rem] lg:-top-32  md:-top-24 top-0 right-0 bg-cyan-700/30 dark:bg-cyan-700/20" />
           </OrbContainer>
     </>
     </div>

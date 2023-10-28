@@ -6,6 +6,7 @@ import codeSnippetOnMdxBlogPostMdx from './code-snippet-on-mdx-blog-post.mdx.jso
 import guideToUsingImagesInNextjsMdx from './guide-to-using-images-in-nextjs.mdx.json' assert { type: 'json' }
 import learningWebDevelopmentTogetherWithARealProjectMdx from './learning-web-development-together-with-a-real-project.mdx.json' assert { type: 'json' }
 import pescuituluiLaRapitorSi_8BeneficiiAleSaleMdx from './pescuitului-la-rapitor-si-8-beneficii-ale-sale.mdx.json' assert { type: 'json' }
+import targovisteMdx from './targoviste.mdx.json' assert { type: 'json' }
 import theLastOfUsMdx from './the-last-of-us.mdx.json' assert { type: 'json' }
 import topFamousAppsBuiltWithFlutterFrameworkMdx from './top-famous-apps-built-with-flutter-framework.mdx.json' assert { type: 'json' }
 import troutLuresHandMadeMdx from './trout-lures-hand-made.mdx.json' assert { type: 'json' }
@@ -13,4 +14,4 @@ import useChatGptForExcelMdx from './use-chat-gpt-for-excel.mdx.json' assert { t
 import whyNextjsIsTheFutureMdx from './why-nextjs-is-the-future.mdx.json' assert { type: 'json' }
 import worldWideWebMdx from './world-wide-web.mdx.json' assert { type: 'json' }
 
-export const allPosts = [assasinsCreedValhallaMdx, buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx, codeSnippetOnMdxBlogPostMdx, guideToUsingImagesInNextjsMdx, learningWebDevelopmentTogetherWithARealProjectMdx, pescuituluiLaRapitorSi_8BeneficiiAleSaleMdx, theLastOfUsMdx, topFamousAppsBuiltWithFlutterFrameworkMdx, troutLuresHandMadeMdx, useChatGptForExcelMdx, whyNextjsIsTheFutureMdx, worldWideWebMdx]
+export const allPosts = [assasinsCreedValhallaMdx, buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx, codeSnippetOnMdxBlogPostMdx, guideToUsingImagesInNextjsMdx, learningWebDevelopmentTogetherWithARealProjectMdx, pescuituluiLaRapitorSi_8BeneficiiAleSaleMdx, targovisteMdx, theLastOfUsMdx, topFamousAppsBuiltWithFlutterFrameworkMdx, troutLuresHandMadeMdx, useChatGptForExcelMdx, whyNextjsIsTheFutureMdx, worldWideWebMdx]
