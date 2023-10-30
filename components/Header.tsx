@@ -163,17 +163,18 @@ export default function Header() {
         <nav className="h-screen mt-5 space-y-8">
         <div className="flex flex-col divide-y divide-zinc-500/40 p-6   text-2xl font-semibold dark:divide-zinc-600/50">
           {headerNavLinks.map((link) => (
-           
-              <Link
+            
+            <div key={link.title} className="p-4">
+            <Link
                 href={link.href}
                 title={link.title}
-                key={link.title}
+                
                 className="text-2xl font-semibold leading-8 tracking-wide text-gray-700 dark:hover:text-gray-300 hover:text-black dark:text-white"
                 onClick={onMenuToggle}
-              > <div  className="p-4">
+            > 
                 {link.title}
-            </div>
               </Link>
+            </div>
           ))}
           </div>
 
