@@ -23,7 +23,7 @@ const ScrollTop = () => {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 z-10 flex-col gap-3 ${
+      className={`fixed bottom-8 right-8 z-50 flex-col gap-3 ${
         show ? " flex" : " hidden"
       }`}
     >

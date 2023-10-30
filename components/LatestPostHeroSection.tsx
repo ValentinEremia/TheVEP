@@ -2,12 +2,12 @@
 import { allPosts } from "@/.contentlayer/generated";
 import PostCardPreview from "@/components/PostCardPreview";
 import { Link } from "@react-email/components";
-import { IconArrowRight } from "@tabler/icons-react";
+ 
 import { Orb, OrbContainer } from "./Orb";
-
+ 
 const posts = allPosts
   .sort((a, b) => (a.date > b.date ? -1 : a.date < b.date ? 1 : 0))
-  .slice(0, 4);
+  .slice(0, 3);
 
 function LatestPostHeroSection() {
   return (
@@ -27,10 +27,13 @@ function LatestPostHeroSection() {
           View All{" "}
           {/* <IconArrowRight className="inline-block transition-transform ease-in-out group-hover:translate-x-0.5 duration-200" /> */}
         </Link>
-      </div><OrbContainer>
+      </div>
+      <OrbContainer>
 				<Orb className="h-[25rem] w-[25rem]  right-0 bg-cyan-500/30 dark:bg-fuchsia-800/30" />
 				<Orb className="h-[25rem] w-[25rem] -left-20  top-72 bg-lime-500/20 dark:bg-violet-600/30" />
 			</OrbContainer>
+
+     
 
       <div className=" mx-auto mb-4 flex flex-col md:grid grid-cols-1 gap-4 md:grid-cols-3 ">
         {posts.map((post, idx) => (

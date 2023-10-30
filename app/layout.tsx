@@ -7,6 +7,7 @@ import ScrollTop from "@/components/ScrollTop";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import nowPlay from "@/components/NowPlaying"
+import Particles from "@/components/Particles";
 
 // export const metadata = {
 //   title: "valy-web",
@@ -27,7 +28,7 @@ export default function RootLayout({
       <body >
         <ThemeProvider attribute="class">
           <Header />
-          
+     
           <ScrollTop />
           
           {children}

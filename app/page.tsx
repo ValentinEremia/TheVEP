@@ -1,6 +1,7 @@
  
 import Hero from "@/components/Hero";
 import LatestPostHeroSection from "@/components/LatestPostHeroSection";
+import Particles from "@/components/Particles";
  
 
 export default function HomePage() {
@@ -10,6 +11,10 @@ export default function HomePage() {
         <Hero />
       </section>
       <LatestPostHeroSection />
+      <Particles
+				className="absolute inset-0 -z-10 h-full   animate-fade-in text-white dark:!text-fuchsia-600  "
+				quantity={70}
+			/>
     </>
   );
 }

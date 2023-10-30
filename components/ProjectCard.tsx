@@ -22,7 +22,7 @@ const ProjectCard = ({ link, image, title, description }: Props) => {
         <CustomLink
       href={link}
       aria-label={`Link to ${title}`}
-      className="p-4 mx-auto  sm:w-1/2 max-w-[34rem]"
+      className="p-4 mx-auto z-10 sm:w-1/2 max-w-[34rem]"
       showIcon={false}
     >
       <motion.div className="project-card h-full overflow-hidden border-2 border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400"
