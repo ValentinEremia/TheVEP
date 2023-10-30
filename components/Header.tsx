@@ -161,18 +161,19 @@ export default function Header() {
         } backdrop-filter bg-opacity-30 dark:bg-opacity-30 backdrop-saturate-150 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100`}
       >
         <nav className="h-screen mt-5 space-y-8">
-        <div className="flex flex-col divide-y divide-zinc-400/50 p-6   text-2xl font-semibold dark:divide-zinc-600/50">
+        <div className="flex flex-col divide-y divide-zinc-500/40 p-6   text-2xl font-semibold dark:divide-zinc-600/50">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="p-4">
+           
               <Link
                 href={link.href}
                 title={link.title}
+                key={link.title}
                 className="text-2xl font-semibold leading-8 tracking-wide text-gray-700 dark:hover:text-gray-300 hover:text-black dark:text-white"
                 onClick={onMenuToggle}
-              >
+              > <div  className="p-4">
                 {link.title}
-              </Link>
             </div>
+              </Link>
           ))}
           </div>
 
