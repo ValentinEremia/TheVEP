@@ -12,6 +12,8 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import Container from "@/components/Container";
+import DownloadCvBtn from "@/components/DownloadCvBtn";
+  
  
 
 type Props = {};
@@ -159,6 +161,7 @@ export default function AboutPage({}: Props) {
             <p className="py-2">
             I invite you to explore my digital domain and discover the world of my work, thoughts, and creations.
             </p>
+            <DownloadCvBtn/>
           </div>
            
           <div className="mt-14">

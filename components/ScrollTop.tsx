@@ -4,6 +4,7 @@
 import { IconArrowUp } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 
+
 const ScrollTop = () => {
   const [show, setShow] = useState(false);
 
@@ -23,10 +24,12 @@ const ScrollTop = () => {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 z-50 flex-col gap-3 ${
+      className={`fixed bottom-[.5rem] md:bottom-6 right-8 z-50 flex-col gap-3 ${
         show ? " flex" : " hidden"
       }`}
     >
+     
+
       <button
       type="button"
         aria-label="Scroll To Top"
