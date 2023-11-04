@@ -166,7 +166,7 @@ export default function AboutPage({}: Props) {
            
           <div className="mt-14">
             <p className="text-gray-400 dark:text-gray-500">
-              Last updated at 28-10-2023
+              Last updated at 04-11-2023
             </p>
           </div>
         </div>
