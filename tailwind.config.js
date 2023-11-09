@@ -94,6 +94,8 @@ module.exports = {
         yellow: colors.amber,
         purple: colors.violet,
         gray: colors.neutral,
+        // black:'#0B0811',
+        // viteViolet: '#9A5FFD'
        
       },
       gradientColorStops: {

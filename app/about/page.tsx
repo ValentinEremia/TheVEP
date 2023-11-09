@@ -143,6 +143,7 @@ export default function AboutPage({}: Props) {
                 </CustomLink>{" "}
                 : Spotify integration, and my own unique perspective.
               </li>
+              
             </ul>
           </div>
           <h2 className="pb-4 text-3xl font-extrabold  tracking-tight text-gray-800 dark:text-gray-200   sm:leading-7 md:text-4xl md:leading-9">
