@@ -21,6 +21,8 @@ import IMG20 from "../app/assets/portfolio20.jpg";
 import IMG21 from "../app/assets/portfolio21.jpg";
 import IMG22 from "../app/assets/portfolio22.jpg";
 import IMG23 from "../app/assets/portfolio23.jpg";
+import IMG24 from "../app/assets/portfolio24.jpg";
+import IMG25 from "../app/assets/portfolio25.jpg";
 import { StaticImageData } from "next/image";
 
 interface Props {
@@ -240,5 +242,23 @@ export const items: Props[] = [
       "Ve Portfolio is a WordPress website that showcases the work of a web developer and designer named Ve. The site is responsive, easy to use, and visually appealing.",
     github: " ",
     demo: "https://ve-portfolio-wp.netlify.app/",
+  },
+  {
+    id: 24,
+    title: "Valy's Daily Blog",
+    image: IMG24,
+    description:
+      "Developed by me to enhance Next.js skills, this blog seamlessly integrates with Sanity.io. The admin panel streamlines content creation for efficient blogging. Responsive, modular, and user-friendly. Explore the demo for dynamic web experiences.",
+    github: " ",
+    demo: "https://nextjs-sanity-v3-blog-app.vercel.app/",
+  },
+  {
+    id: 25,
+    title: "Valy's Blog",
+    image: IMG25,
+    description:
+      "Explore my static blog, powered by Next.js 13 and styled with Tailwind CSS. Each blog post, written in Markdown format, offers a seamless reading experience.",
+    github: " ",
+    demo: "https://static-blog-md.vercel.app/",
   },
 ];
