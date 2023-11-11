@@ -57,8 +57,9 @@ var contentlayer_config_default = makeSource({
   mdx: {
     rehypePlugins: [[rehypePrettyCode, rehypeoptions]]
   }
+  // disableImportAliasWarning: true,
 });
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-UA3STTG5.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-UFJLHH33.mjs.map

@@ -8,6 +8,7 @@ const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `**/*.mdx`,
   contentType: "mdx",
+ 
   fields: {
     title: {
       type: "string",
@@ -64,6 +65,6 @@ export default makeSource({
   mdx: {
     rehypePlugins: [[rehypePrettyCode, rehypeoptions]],
   },
-  
+  // disableImportAliasWarning: true,
   
 });

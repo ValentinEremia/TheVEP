@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: "Valy Portfolio",
   author: "Valentin E.",
-  mySpecialization: "Junior Frontend Developer",
+  mySpecialization: "Frontend Developer",
   headerTitle: "Valy Portfolio",
   description: "A blog created with Next.js and Tailwind.css",
 

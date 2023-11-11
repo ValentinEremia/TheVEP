@@ -1,7 +1,9 @@
 const { withContentlayer } = require("next-contentlayer");
 
 module.exports = withContentlayer({
-  experimental: { serverActions: true },
+  experimental: {
+    serverActions: true,
+  },
 
   images: {
     remotePatterns: [
