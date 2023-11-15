@@ -156,7 +156,7 @@ export default function Header() {
 
       {/* Mobile side menu */}
       <div
-        className={`sm:hidden fixed w-full h-screen right-0 bg-white dark:bg-black z-20 transform ease-in-out duration-500 ${
+        className={`sm:hidden fixed w-full h-screen right-0 bg-white dark:bg-black z-50 transform ease-in-out duration-500 ${
           menuShow ? "translate-x-0" : " -translate-x-full"
         } backdrop-filter bg-opacity-30 dark:bg-opacity-30 backdrop-saturate-150 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100`}
       >

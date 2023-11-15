@@ -53,7 +53,7 @@ export const ProjectModal = ({
           src={imgSrc}
           alt={`An image of the ${title} project.`}
         />
-        <div className='p-[2.4rem]'>
+        <div className='sm:p-[2.4rem] p-5'>
           <h4 className="text-4xl font-bold">{title}</h4>
           <div className='flex flex-wrap gap-[1.2rem] text-lg font-medium text-primary-400 mt-[0.3rem] mx-0 mb-[2.4rem]'>{tech.join(" - ")}</div>
 
@@ -64,7 +64,7 @@ export const ProjectModal = ({
             <p className='font-bold text-2xl mb-[0.8rem]'>
               Project Links<span className="text-primary-400">.</span>
             </p>
-            <div className='flex items-center gap-[1.2rem]'>
+            <div className='flex flex-col sm:flex-row sm:items-center sm:gap-[1.2rem] gap-[.5rem]'>
               <Link target="_blank" rel="nofollow" className="flex   items-center  gap-[0.4rem] text-lg text-primary-400 hover:underline" href={code}>
                 <AiFillGithub /> source code
               </Link>
