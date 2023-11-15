@@ -119,13 +119,13 @@ export default function Header() {
         } bg-white dark:bg-black bg-opacity-30 dark:bg-opacity-30 backdrop-filter backdrop-saturate-150 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100`}
       >
           
-        <nav className="flex items-center justify-between w-full max-w-2xl px-4 mx-auto sm:px-6 sm:py-1 md:max-w-3xl xl:max-w-4xl xl:px-0">
+        <nav className="flex items-center justify-between w-full max-w-2xl px-4 mx-auto sm:px-6 sm:py-1 md:max-w-3xl xl:max-w-4xl xl:px-0 ">
         
          
           
          
       
-        <div className="flex items-center text-base leading-5">
+        <div className="flex items-center text-[0.97rem]  leading-5">
           
           <div className="hidden sm:block sm:space-x-8">
             {headerNavLinks
@@ -135,7 +135,7 @@ export default function Header() {
                   key={link.title}
                   title={link.title}
                   href={link.href}
-                  className="font-medium text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+                  className="font-medium text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white  "
                 >
                   {link.title}
                 </Link>

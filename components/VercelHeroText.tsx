@@ -1,11 +1,12 @@
 import React from "react";
+ 
+  
 
-type Props = {};
 
-export default function VercelHeroText({}: Props) {
+export default function VercelHeroText() {
   return (
 
-    <div  >
+    <div className="vercel_text" >
 
  
       
@@ -19,7 +20,9 @@ export default function VercelHeroText({}: Props) {
             Welcome
           </span>
         </span>
-        <span
+{/* /////////////////////////////////// */}
+       
+       <span
           data-content="to my"
           className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-black dark:before:text-white  before:animate-gradient-background-2"
         >
@@ -27,12 +30,14 @@ export default function VercelHeroText({}: Props) {
             {" "}
             to my
           </span>
-        </span>
+       </span>
+       
+        {/* /////////////////////////////////// */}
         <span
           data-content="website"
-          className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-black dark:before:text-white  before:animate-gradient-background-3"
+          className="  relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-black dark:before:text-white  before:animate-gradient-background-3"
         >
-          <span className="px-2 text-transparent bg-clip-text bg-gradient-to-r from-gradient-3-start to-gradient-3-end animate-gradient-foreground-3">
+          <span className="  px-2 text-transparent bg-clip-text bg-gradient-to-r from-gradient-3-start to-gradient-3-end animate-gradient-foreground-3">
             {" "}
             website
           </span>
