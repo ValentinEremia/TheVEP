@@ -3,23 +3,23 @@ import { Project } from "./Project";
 
 export const Projects = () => {
   return (
-    <section >
+    <section>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10  ">
         {/* {projects.map((project) => {
           return <Project key={project.title} {...project} />;
         })} */}
-         {projects &&
-            projects
-              .sort((a, b) => {
-                if (new Date(a.id) > new Date(b.id)) {
-                  return -1;
-                }
-                return 1;
-              })
-              .map((project) => (
-                // <ProjectCard link={item.demo} key={item.title} {...item} />
-                <Project key={project.title} {...project} />
-              ))}
+        {projects &&
+          projects
+            .sort((a, b) => {
+              if (new Date(a.id) > new Date(b.id)) {
+                return -1;
+              }
+              return 1;
+            })
+            .map((project) => (
+              // <ProjectCard link={item.demo} key={item.title} {...item} />
+              <Project key={project.title} {...project} />
+            ))}
       </div>
     </section>
   );
@@ -200,7 +200,7 @@ const projects = [
     projectLink: "https://cris-paul-photo.netlify.app",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    " A website portfolio for a photographer. Build with HTML, CSS, and JavaScript Library's.",
+      " A website portfolio for a photographer. Build with HTML, CSS, and JavaScript Library's.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -229,7 +229,7 @@ const projects = [
     projectLink: "https://valentineremia.github.io/rfpwa/index.html",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    " A website portfolio for a photographer. Build with HTML, CSS, and JavaScript Library's.",
+      " A website portfolio for a photographer. Build with HTML, CSS, and JavaScript Library's.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -345,7 +345,7 @@ const projects = [
     projectLink: "https://greenvillagepwa.netlify.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    " Is a case study website. It is built in React Js, just for fun and practice. It is also a Progressive Web Application.",
+      " Is a case study website. It is built in React Js, just for fun and practice. It is also a Progressive Web Application.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -374,7 +374,7 @@ const projects = [
     projectLink: "https://ve-react.netlify.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    " My portfolio website with theme mode and PDF file download button of my CV. Is a responsive PWA application. It was built with React Js.",
+      " My portfolio website with theme mode and PDF file download button of my CV. Is a responsive PWA application. It was built with React Js.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -403,7 +403,7 @@ const projects = [
     projectLink: "https://14pro.netlify.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    " Apple iPhone 14 landing page. Is a responsive PWA application. It was built using ThreeJs + ReactJS",
+      " Apple iPhone 14 landing page. Is a responsive PWA application. It was built using ThreeJs + ReactJS",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -432,7 +432,7 @@ const projects = [
     projectLink: "https://insta-clone-flutter.netlify.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    " A project built with Flutter, it is  a mobile and web app. It uses Google Firebase as a backend.",
+      " A project built with Flutter, it is  a mobile and web app. It uses Google Firebase as a backend.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -461,7 +461,7 @@ const projects = [
     projectLink: "https://valentineremia.github.io/trvl/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    " TRVL. Is a travel responsive website and PWA application. It was built using ReactJS",
+      " TRVL. Is a travel responsive website and PWA application. It was built using ReactJS",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -490,7 +490,7 @@ const projects = [
     projectLink: "https://valentineremia.github.io/tatoo/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    " The Void Tattoo . Is a responsive landing page and PWA. It was built using ReactJS",
+      " The Void Tattoo . Is a responsive landing page and PWA. It was built using ReactJS",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -516,10 +516,10 @@ const projects = [
     title: "Linear.app",
     imgSrc: "./static/assets/portfolio17.jpg",
     code: "",
-    projectLink: "https://nextjs-linear-clone.vercel.app/" ,
+    projectLink: "https://nextjs-linear-clone.vercel.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    "Rebuilding Linear.app homepage with Next.js and Tailwind. Is a responsive landing page.",
+      "Rebuilding Linear.app homepage with Next.js and Tailwind. Is a responsive landing page.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -548,7 +548,7 @@ const projects = [
     projectLink: "https://cards-memo.netlify.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    "An engaging vanilla JavaScript memory game with a captivating card flip animation, now available as a Progressive Web App (PWA).",
+      "An engaging vanilla JavaScript memory game with a captivating card flip animation, now available as a Progressive Web App (PWA).",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -577,7 +577,7 @@ const projects = [
     projectLink: "https://nnyflix.netlify.app",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    "Explore movies effortlessly with my React.js app, powered by the TMDB database. Discover, sort, and search with ease. Dive into synopses and trailers for a complete movie experience.",
+      "Explore movies effortlessly with my React.js app, powered by the TMDB database. Discover, sort, and search with ease. Dive into synopses and trailers for a complete movie experience.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -606,7 +606,7 @@ const projects = [
     projectLink: "https://je-react-portfolio.netlify.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    "This is a single-page, responsive React portfolio website, built with React, Tailwind CSS, Framer Motion, and React Hook Form for seamless interactivity and dynamic form submissions.",
+      "This is a single-page, responsive React portfolio website, built with React, Tailwind CSS, Framer Motion, and React Hook Form for seamless interactivity and dynamic form submissions.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -635,7 +635,7 @@ const projects = [
     projectLink: "https://pensiunea-rosa.netlify.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    "Pensiunea Rosa, a small, family-owned business in Romania, built a responsive PWA website with GSAP, HTML, CSS, and JavaScript for accommodation and traditional Romanian cuisine.",
+      "Pensiunea Rosa, a small, family-owned business in Romania, built a responsive PWA website with GSAP, HTML, CSS, and JavaScript for accommodation and traditional Romanian cuisine.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -664,7 +664,7 @@ const projects = [
     projectLink: "https://ve-figma-portfolio.netlify.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
-    "Ve-Figma Portfolio is a personal portfolio website built with GSAP, HTML, CSS, and JavaScript. The site is designed to showcase the work of a web developer and designer named Ve.",
+      "Ve-Figma Portfolio is a personal portfolio website built with GSAP, HTML, CSS, and JavaScript. The site is designed to showcase the work of a web developer and designer named Ve.",
     modalContent: (
       <>
         <p>Alright, you got me. I&apos;m all out of paint references.</p>
@@ -691,25 +691,18 @@ const projects = [
     imgSrc: "./static/assets/portfolio23.jpg",
     code: "",
     projectLink: "https://ve-portfolio-wp.netlify.app/",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["WordPress","HTML", "CSS", "JS"],
     description:
-    "Ve Portfolio is a WordPress website that showcases the work of a web developer and designer named Ve. The site is responsive, easy to use, and visually appealing.",
+      "Ve Portfolio is a WordPress website that showcases the work of a web developer and designer named Ve. The site is responsive, easy to use, and visually appealing.",
     modalContent: (
       <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
+        <p>Ve Portfolio is a WordPress website that showcases the work of a web developer and designer named Ve.</p>
+        <p>WordPress, known for its flexibility and ease of use, allows user to effortlessly manage and update the content on the site.</p>
         <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
-        </p>
-        <p>You get the idea. Now more lorem {"😀"}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
+        But what makes <b>Ve Portfolio</b> truly unique is the meticulous process of converting it from a dynamic WordPress site to a static page, meticulously coded in HTML, CSS and JavaScript. This transformation was an experiment to see how complicated it can be and if the performance of the site is optimized.
         </p>
         <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+        The site is responsive, easy to use, and visually appealing.
         </p>
       </>
     ),
@@ -720,26 +713,20 @@ const projects = [
     imgSrc: "./static/assets/portfolio24.jpg",
     code: "",
     projectLink: "https://nextjs-sanity-v3-blog-app.vercel.app/",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["Next.js 13","Sanity.io", "Tailwind CSS"   ],
     description:
-    "Developed by me to enhance Next.js skills, this blog seamlessly integrates with Sanity.io. The admin panel streamlines content creation for efficient blogging. Responsive, modular, and user-friendly. Explore the demo for dynamic web experiences.",
+      "Developed by me to enhance Next.js skills, this blog seamlessly integrates with Sanity.io. The admin panel streamlines content creation for efficient blogging.",
     modalContent: (
       <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
+         <p>This web application, crafted with cutting-edge technologies including <b> Next.js 13, Tailwind CSS,</b> and<b>  Sanity.io</b>, is hosted on the versatile <b>Vercel</b> platform. </p><p> The project's primary goal is to delve into and implement the new routing methods introduced in Next.js 13.</p>
         <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
+        With the integration of Tailwind CSS, the application boasts a flexible and easily customizable design, offering a modern and responsive aesthetic. <br /> The inclusion of Sanity.io adds a crucial component, providing a user-friendly control panel for seamless article creation and management on the blog. <br /> This introduces a level of versatility and control over content without requiring direct interventions in the source code.
         </p>
-        <p>You get the idea. Now more lorem {"😀"}</p>
+        <p>Hosting on Vercel provides a swift and scalable solution for project deployment, ensuring an efficient and <b>rapid</b> 🚀 user experience for site visitors.</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
+        In essence, this application combines the enhanced routing capabilities of Next.js 13, the flexible aesthetics offered by Tailwind CSS, easy content management through Sanity.io, and an efficient hosting infrastructure via Vercel. </p><p> The result is responsive, modular, and user-friendly. ✨ Explore the demo live project for dynamic web experiences. 
         </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
-        </p>
+         
       </>
     ),
   },
@@ -749,25 +736,26 @@ const projects = [
     imgSrc: "./static/assets/portfolio25.jpg",
     code: "",
     projectLink: "https://static-blog-md.vercel.app/",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["Next.js 13", "Markdown", "Tailwind CSS"],
     description:
-    "Explore my static blog, powered by Next.js 13 and styled with Tailwind CSS. Each blog post, written in Markdown format, offers a seamless reading experience.",
+      "Explore my static blog, powered by Next.js 13 and styled with Tailwind CSS. Each blog post, written in Markdown format, offers a seamless reading experience.",
     modalContent: (
       <>
-        <p>Alright, you got me. I&apos;m all out of paint references.</p>
         <p>
-          Point is, use this space to explain a bit further WHAT this project
-          is, as well as what YOU contributed to it.
-        </p>
-        <p>You get the idea. Now more lorem {"😀"}</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
+          This blog is a simple application where I tried to learn the new
+          structure and routing of a NextJs 13 project.
         </p>
         <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          Is a static blog project built with Next.js 13, employing Tailwind CSS
+          for styling and Markdown for content creation.{" "}
+        </p>
+        <p>
+          Hosted on Vercel, the site follows a modern routing approach,
+          transitioning from pages root to app root system.
+        </p>{" "}
+        <p>
+          The design is clean and contemporary, and content management is
+          streamlined due to the use of the Markdown format.
         </p>
       </>
     ),

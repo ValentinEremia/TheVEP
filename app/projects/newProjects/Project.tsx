@@ -43,7 +43,7 @@ export const Project = ({
 
   return (
     <>
-    {/* <div className="p-3 project-card h-full overflow-hidden border-2 border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400"> */}
+      {/* <div className="p-3 project-card h-full overflow-hidden border-2 border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400"> */}
       <motion.div
         ref={ref}
         variants={{
@@ -71,28 +71,48 @@ export const Project = ({
             className="w-[85%] absolute bottom-[-2.7rem] left-[50%] translate-x-[-50%] translate-y-[20%] transition-all duration-[0.25s] rounded-[0.4rem]"
           />
         </div>
-        <div className='my-6 mx-0'>
+        <div className="my-6 mx-0">
           <Reveal width="100%">
-            <div className='flex items-center gap-[1.2rem]'>
-              <h4 className="font-bold text-2xl flex-shrink-0 max-w-[calc(100% - 150px)]">{title}</h4>
-              <div className='w-full h-[1.5px] bg-gray-600/70 ' />
+            <div className="flex items-center gap-[1.2rem]">
+              <h4 className="font-bold text-2xl flex-shrink-0 max-w-[calc(100% - 150px)]">
+                {title}
+              </h4>
+              <div className="w-full h-[1.5px] bg-gray-600/70 " />
+              {code == "" ?'': (
+                <Link
+                  href={code}
+                  target="_blank"
+                  rel="nofollow"
+                  className="opacity-50 transition-opacity duration-[0.25s] hover:opacity-80"
+                >
+                  <AiFillGithub size="1.5rem" />
+                </Link>
+              )}
 
-              <Link href={code} target="_blank" rel="nofollow" className="opacity-50 transition-opacity duration-[0.25s] hover:opacity-80">
-                <AiFillGithub size="1.5rem" />
-              </Link>
-
-              <Link href={projectLink} target="_blank" rel="nofollow" className="opacity-50 transition-opacity duration-[0.25s]  hover:opacity-80" >
+              <Link
+                href={projectLink}
+                target="_blank"
+                rel="nofollow"
+                className="opacity-50 transition-opacity duration-[0.25s]  hover:opacity-80"
+              >
                 <AiOutlineExport size="1.5rem" />
               </Link>
             </div>
           </Reveal>
           <Reveal>
-            <div className='flex flex-wrap gap-[1.2rem] text-lg text-primary-400 my-[0.8rem] mx-0'>{tech.join(" - ")}</div>
+            <div className="flex flex-wrap gap-[1.2rem] text-lg text-primary-400 my-[0.8rem] mx-0">
+              {tech.join(" - ")}
+            </div>
           </Reveal>
           <Reveal>
-            <p className='font-normal text-base text-gray-600 dark:text-gray-300'>
+            <p className="font-normal text-base text-gray-600 dark:text-gray-300">
               {description}{" "}
-              <span className="inline-block text-lg font-medium cursor-pointer text-primary-400 hover:underline " onClick={() => setIsOpen(true)}>Learn more {">"}</span>
+              <span
+                className="inline-block text-lg font-medium cursor-pointer text-primary-400 hover:underline "
+                onClick={() => setIsOpen(true)}
+              >
+                Read more {">"}
+              </span>
             </p>
           </Reveal>
         </div>
@@ -107,10 +127,7 @@ export const Project = ({
         code={code}
         tech={tech}
       />
-    {/* </div> */}
+      {/* </div> */}
     </>
   );
 };
-
-
-

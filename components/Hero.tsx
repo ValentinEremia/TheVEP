@@ -12,7 +12,9 @@ const Hero = (props: Props) => {
   return ( 
     <Container> 
    
-      <div className="flex flex-col items-center justify-around  w-full md:h-[118vh] sm:h-[90vh] h-[94vh] lg:max-h-full">
+      <div className="flex flex-col items-center justify-around  w-full md:h-[118vh] sm:h-[100svh] h-[94vh] lg:max-h-full">
+   
+      {/* <div className="flex flex-col items-center justify-around  w-full md:h-[118vh] sm:h-[90vh] h-[94vh] lg:max-h-full"> */}
         <div className="flex items-center  justify-center ">
           <VercelHeroText />
         </div>
@@ -27,7 +29,7 @@ const Hero = (props: Props) => {
             </PageTitle>
            
              
-            <p className="text-lg leading-7 prose text-gray-500 max-w-none dark:text-gray-400">A mobile and web developer with a strong focus in front-end and system design. <br />Let's collaborate and bring your ideas to life! <br />
+            <p className="text-lg leading-7 prose text-gray-500 max-w-none dark:text-gray-400">A mobile and web developer with a strong focus in front-end and system design. <br />Let's collaborate and bring your ideas to life! {' '}
               
 
               <Link
