@@ -38,14 +38,9 @@ const projects = [
     modalContent: (
       <>
         <p>
-          Is a real-time coaching app for students learning to paint. This app
-          is my baby, designed and built on my own.
+        Link In Bio - A Linktree-like web page version made with HTML, CSS and JavaScript
         </p>
-        <p>
-          The tech stack is based on top of Flutter for the mobile app,
-          connected to a Python & FastAPI backend, with data stored in Postgres,
-          deployed on Heroku.
-        </p>
+       
         <p>
           Because this isn&apos;t real, here&apos;s some gibberish to fill space{" "}
           {":)"}

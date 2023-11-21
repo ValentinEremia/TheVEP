@@ -24,7 +24,7 @@ const BlogPostCard = ({ link, image, title, summary }: Props) => {
         <CustomLink
       href={link}
       aria-label={`Link to ${title}`}
-      className="z-10 p-4 mx-auto  sm:w-1/2 max-w-[34rem]"
+      className="z-10 p-3 lg:p-4 mx-auto  sm:w-1/2 max-w-[34rem]"
       showIcon={false}
     >
       <motion.div className=" post-card h-full overflow-hidden border-2 border-gray-200 rounded-md dark:border-gray-800 hover:border-primary-500 dark:hover:border-primary-400"
@@ -48,7 +48,7 @@ const BlogPostCard = ({ link, image, title, summary }: Props) => {
           width={544}
           height={306}
         />
-        <div className="p-6">
+        <div className="p-4">
           <h4 className="mb-3 text-2xl font-bold leading-8 tracking-tight text-black dark:text-white">
             {title}
             {/* <svg

@@ -107,7 +107,9 @@ module.exports = {
         "gradient-3-start": "#A100F2",
         "gradient-3-end": "#2D00F7",
       },
+      
       keyframes: {
+         
         shrink: {
           "0% , 100%": {
             height: "0.75rem",
@@ -180,6 +182,7 @@ module.exports = {
         },
       },
       animation: {
+         
         shrink: "shrink 1.5s infinite",
         expand: "expand 1.5s infinite",
         "gradient-background-1": "gradient-background-1 8s infinite",

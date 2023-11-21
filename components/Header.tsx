@@ -145,7 +145,8 @@ export default function Header() {
             <MenuButton onClick={onMenuToggle} isOpened={menuShow} />
           </div>
         </div>
-        <ThemeSwitch />
+        <ThemeSwitch /> 
+        {/* <div className="hidden  sm:flex"><ThemeSwitch /></div> */}
         
       </nav>
 
@@ -194,6 +195,7 @@ export default function Header() {
                   );
                 })}
 				</div>
+        {/* <div className="w-full flex items-center justify-center"><ThemeSwitch /><p className="ml-2">- Theme Switch</p></div> */}
         </nav>
       </div>
     </>

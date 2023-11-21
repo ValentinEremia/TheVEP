@@ -42,7 +42,7 @@
     .light{
        @apply bg-gray-50 selection:bg-purple-200 selection:text-black
     }
-
+    
     
 }
 
