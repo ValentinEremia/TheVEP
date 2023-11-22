@@ -2,6 +2,7 @@
 
 import assasinsCreedValhallaMdx from './assasins-creed-valhalla.mdx.json' assert { type: 'json' }
 import buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx from './building-a-simple-animated-accordion-component-with-tailwind-css.mdx.json' assert { type: 'json' }
+import eminemFortniteOgChapter_4FinaleMdx from './eminem-fortnite-og-chapter-4-finale.mdx.json' assert { type: 'json' }
 import guideToUsingImagesInNextjsMdx from './guide-to-using-images-in-nextjs.mdx.json' assert { type: 'json' }
 import instagramNewPhotoFiltersAnnouncedEasierReelsMdx from './instagram-new-photo-filters-announced-easier-reels.mdx.json' assert { type: 'json' }
 import learningWebDevelopmentTogetherWithARealProjectMdx from './learning-web-development-together-with-a-real-project.mdx.json' assert { type: 'json' }
@@ -15,4 +16,4 @@ import troutLuresHandMadeMdx from './trout-lures-hand-made.mdx.json' assert { ty
 import useChatGptForExcelMdx from './use-chat-gpt-for-excel.mdx.json' assert { type: 'json' }
 import worldWideWebMdx from './world-wide-web.mdx.json' assert { type: 'json' }
 
-export const allPosts = [assasinsCreedValhallaMdx, buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx, guideToUsingImagesInNextjsMdx, instagramNewPhotoFiltersAnnouncedEasierReelsMdx, learningWebDevelopmentTogetherWithARealProjectMdx, microsoftOfficiallyLaunchesLoopNotionCompetitorMdx, notesTextEvernoteOnenoteKeepAppsMdx, pescuituluiLaRapitorSi_8BeneficiiAleSaleMdx, targovisteMdx, theLastOfUsMdx, topFamousAppsBuiltWithFlutterFrameworkMdx, troutLuresHandMadeMdx, useChatGptForExcelMdx, worldWideWebMdx]
+export const allPosts = [assasinsCreedValhallaMdx, buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx, eminemFortniteOgChapter_4FinaleMdx, guideToUsingImagesInNextjsMdx, instagramNewPhotoFiltersAnnouncedEasierReelsMdx, learningWebDevelopmentTogetherWithARealProjectMdx, microsoftOfficiallyLaunchesLoopNotionCompetitorMdx, notesTextEvernoteOnenoteKeepAppsMdx, pescuituluiLaRapitorSi_8BeneficiiAleSaleMdx, targovisteMdx, theLastOfUsMdx, topFamousAppsBuiltWithFlutterFrameworkMdx, troutLuresHandMadeMdx, useChatGptForExcelMdx, worldWideWebMdx]
