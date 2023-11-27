@@ -38,6 +38,24 @@
       "form-factor": "wide"
     },
     {
+      "src": "screenshots/Blog.jpg",
+      "sizes": "360x721",
+      "type": "image/jpg",
+      "form-factor": "wide"
+    },
+    {
+      "src": "screenshots/Projects.jpg",
+      "sizes": "360x721",
+      "type": "image/jpg",
+      "form-factor": "wide"
+    },
+    {
+      "src": "screenshots/Contact.jpg",
+      "sizes": "360x721",
+      "type": "image/jpg",
+      "form-factor": "wide"
+    },
+    {
       "src": "screenshots/about.jpg",
       "sizes": "360x721",
       "type": "image/jpg",
