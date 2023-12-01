@@ -221,7 +221,7 @@ const projects = [
     title: "Mihai Radu v.2",
     imgSrc: "./static/assets/portfolio7.jpg",
     code: "https://github.com/ValentinEremia/rfpwa",
-    projectLink: "https://valentineremia.github.io/rfpwa/index.html",
+    projectLink: "https://rfpwafinal.netlify.app/",
     tech: ["HTML", "CSS", "JavaScript"],
     description:
       " A website portfolio for a photographer. Build with HTML, CSS, and JavaScript Library's.",
