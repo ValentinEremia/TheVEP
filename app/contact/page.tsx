@@ -14,7 +14,7 @@ export default function ContactPage({}: Props) {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
+    handleSubmit;
     if (!formRef.current) return; // Verificați dacă referința la formular există
 
     const formData = new FormData(formRef.current);
@@ -23,6 +23,7 @@ export default function ContactPage({}: Props) {
 
     if (error) {
       toast.error(error);
+      return;
     } else {
       toast.success("Email sent successfully!");
 
@@ -55,33 +56,33 @@ export default function ContactPage({}: Props) {
 
         <p className="z-10 text-lg leading-7 text-gray-700 dark:text-gray-300 xl:text-xl ">
           If you're feeling a bit adventurous, here are some fun ways to reach
-          out:</p>
-          <div className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl mb-7">
-            <ul className="list-disc   ml-6">
-              <li className="mt-2">
-                <b>Send me a carrier pigeon with a handwritten note.</b> Who
-                knows, maybe my office is secretly a pigeon sanctuary, and your
-                message will find a cozy home here!
-              </li>
-              <li className="mt-2">
-                <b>
-                  Shoot a smoke signal into the sky with the message "Valentin,
-                  please contact me!"
-                </b>{" "}
-                It might sound like a scene from a wild west movie, but hey, if
-                it works for Batman, it can work for us too!
-              </li>
-              <li className="mt-2">
-                <b>
-                  {" "}
-                  Wear a signboard that says, "Looking for a programming project."
-                </b>{" "}
-                I promise I'll keep an eye out for anyone walking around with
-                such a cool sign.
-              </li>
-            </ul>
-          </div>
-        
+          out:
+        </p>
+        <div className="pb-6 text-lg leading-7 text-gray-800 dark:text-gray-300 xl:text-xl mb-7">
+          <ul className="list-disc   ml-6">
+            <li className="mt-2">
+              <b>Send me a carrier pigeon with a handwritten note.</b> Who
+              knows, maybe my office is secretly a pigeon sanctuary, and your
+              message will find a cozy home here!
+            </li>
+            <li className="mt-2">
+              <b>
+                Shoot a smoke signal into the sky with the message "Valentin,
+                please contact me!"
+              </b>{" "}
+              It might sound like a scene from a wild west movie, but hey, if it
+              works for Batman, it can work for us too!
+            </li>
+            <li className="mt-2">
+              <b>
+                {" "}
+                Wear a signboard that says, "Looking for a programming project."
+              </b>{" "}
+              I promise I'll keep an eye out for anyone walking around with such
+              a cool sign.
+            </li>
+          </ul>
+        </div>
 
         <p className="z-10 text-lg leading-7 text-gray-700 dark:text-gray-300 xl:text-xl mb-7">
           I look forward to hearing from you and embarking on our creative
@@ -91,7 +92,19 @@ export default function ContactPage({}: Props) {
         <form
           className="mb-14 flex flex-col text-black dark:text-slate-200"
           ref={formRef}
-          onSubmit={handleSubmit}
+          // onSubmit={handleSubmit}
+          action={async (formData) => {
+            const { data, error } = await sendEmail(formData);
+
+            if (error) {
+              toast.error(error);
+              return;
+            }
+
+            toast.success("Email sent successfully!");
+            // Resetați valorile câmpurilor input după trimitere cu succes
+            if (formRef.current) formRef.current.reset();
+          }}
         >
           <input
             className="h-14 px-4 border-[1px] bg-white/70 rounded-lg border-zinc-400 dark:border-zinc-700  dark:bg-slate-950/30 dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"

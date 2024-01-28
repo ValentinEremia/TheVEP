@@ -4,6 +4,7 @@ const withPWA = require('next-pwa')
 module.exports = withContentlayer({ 
   experimental: {
     serverActions: true,
+  
   },
 
   images: {
