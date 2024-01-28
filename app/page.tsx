@@ -1,7 +1,7 @@
  
 import Hero from "@/components/Hero";
 import LatestPostHeroSection from "@/components/LatestPostHeroSection";
-import Particles from "@/components/Particles";
+
  
 
 export default function HomePage() {
