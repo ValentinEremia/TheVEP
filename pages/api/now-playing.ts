@@ -44,3 +44,4 @@ async function handler(_: NextApiRequest, res: NextApiResponse<NowPlayingSong>) 
 }
 
 export default withSentry(handler);
+

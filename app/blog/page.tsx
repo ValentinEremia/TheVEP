@@ -2,9 +2,15 @@
 import BlogPostCard from "@/components/BlogPostCard";
 import Container from "@/components/Container";
 import PageTitle from "@/components/PageTitle";
- import { allPosts } from "contentlayer/generated";
+import { allPosts } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
+import siteMetadata from "@/data/siteMetadata";
 
+
+export const metadata = {
+  title: siteMetadata.blogsMeta.title,
+  description:siteMetadata.blogsMeta.description,
+};
 
 function BlogPage() {
   const posts = allPosts.sort((a, b) =>

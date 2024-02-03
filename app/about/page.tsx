@@ -1,9 +1,10 @@
-"use client";
-import CustomLink from "@/components/CustomLink";
-import PageTitle from "@/components/PageTitle";
 import React from "react";
 import Image from "next/image"; 
+import CustomLink from "@/components/CustomLink";
+import PageTitle from "@/components/PageTitle";
 import siteMetadata from "@/data/siteMetadata";
+import Container from "@/components/Container";
+import DownloadCvBtn from "@/components/DownloadCvBtn";
 import {
   FaGithub,
   FaTwitter,
@@ -11,12 +12,17 @@ import {
   FaYoutube,
   FaFacebook,
 } from "react-icons/fa";
-import Container from "@/components/Container";
-import DownloadCvBtn from "@/components/DownloadCvBtn";
   
  
 
 type Props = {};
+
+
+export const metadata = {
+  title: siteMetadata.aboutMeta.title,
+  description:siteMetadata.aboutMeta.description,
+
+};
 
 const social_links = [
   {
@@ -167,7 +173,7 @@ export default function AboutPage({}: Props) {
            
           <div className="mt-14">
             <p className="text-gray-400 dark:text-gray-500">
-              Last updated at 04-11-2023
+              Last updated at 04.01.2023
             </p>
           </div>
         </div>

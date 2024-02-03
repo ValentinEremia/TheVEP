@@ -8,7 +8,7 @@ import {
   FaYoutube,
   FaFacebook,
 } from "react-icons/fa";
-import { MdMarkEmailUnread } from "react-icons/md";
+import{MdMarkEmailUnread,} from "react-icons/md";
 import NowPlaying from "./NowPlaying";
 
 const social_links = [
@@ -63,16 +63,16 @@ const social_links = [
     url: "https://www.facebook.com/valentin.eremia.5095",
     alt:"Facebook icon link",
   },
-  // {
-  //   icon: (
-  //     <MdMarkEmailUnread
-  //       className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
-	// 	transition-all duration-500 ease-out hover:scale-110"
-  //     />
-  //   ),
+  {
+    icon: (
+      <MdMarkEmailUnread
+        className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer 
+		transition-all duration-500 ease-out hover:scale-110"
+      />
+    ),
 
-  //   url: "mailto:valentineremia@yahoo.com",
-  // },
+    url: "mailto:valentineremia@yahoo.com",
+  },
   
 ];
 
@@ -128,9 +128,9 @@ export default function Footer() {
           {/* ----- Social ----- */}
 
           <div className="flex flex-col space-y-4  items-center max-w-fit m-auto  ">
-            <p className="text-md uppercase  font-bold">S o c i a l</p>
+            <p className="text-base sm:text-xl uppercase  font-bold sm:mb-5 ">S o c i a l</p>
 
-            <div className="flex gap-4">
+            <div className="flex w-full flex-wrap sm:flex-row min-[620px]:gap-12 gap-8 justify-center">
               {social_links &&
                 social_links.map((link, index) => {
                   return (

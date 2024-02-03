@@ -3,6 +3,13 @@ import PageTitle from "@/components/PageTitle";
 // import { items } from "../../data/projectsData";
 import Container from "@/components/Container";
 import { Projects } from "./newProjects/Projects";
+import siteMetadata from "@/data/siteMetadata";
+
+
+export const metadata = {
+  title: siteMetadata.projectsMeta.title,
+  description:siteMetadata.projectsMeta.description,
+};
 
 const ProjectsPage = () => {
   return (

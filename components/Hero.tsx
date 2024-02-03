@@ -19,7 +19,7 @@ const Hero = (props: Props) => {
           <VercelHeroText />
         </div>
 
-        <div className="lg:mt-20 pb-10">
+        <div className="lg:mt-20 pb-10 ">
           <div className=" space-y-3 md:space-y-5 lg:space-y-8">
             <PageTitle>
               Hey! I'm Valentin{" "}
