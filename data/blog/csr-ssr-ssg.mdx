@@ -1,0 +1,165 @@
+---
+title: Client Side Rendering, Server Side Rendering, Static Site Generation
+date: 2024-02-08
+summary: "In this post, I'll explain the different web rendering strategies, how they work, and which one to choose."
+image: https://cdn.hashnode.com/res/hashnode/image/upload/v1690300440179/4622ad8c-d838-4021-b6f0-2aaf2db11b3c.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp 
+---
+ 
+
+## CSR, SSR, and SSG: Comparison in Web Rendering Strategies
+
+> ### Excerpt
+> Introduction
+In this post, I'll explain the different web rendering strategies, how they work, and which one to choose.
+🖥️ Client Side Rendering (CSR)
+It's the default rendering strategy in React applications. Here, pages get built directly in the b...
+
+---
+## Introduction
+
+In this post, I'll explain the different web rendering strategies, how they work, and which one to choose.
+
+## 🖥️ **Client Side Rendering (CSR)**
+
+It's the default rendering strategy in React applications. Here, pages get built directly in the browser using JavaScript.
+
+All logic, data fetching, templating, and routing are handled on the client, not on the server.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690267794970/f447f44b-5dda-4e50-bb7a-dcae2819d2f8.png?auto=compress,format&format=webp)
+
+### Pros
+
+-   **Fast changes:** User sees updates instantly.
+    
+-   **Less server work:** Server just sends JavaScript, and the browser does the rest.
+    
+
+### Cons
+
+-   **Slow at first load:** Browser has to download and run JavaScript first.
+    
+-   **Bad for SEO:** Search engines can't understand JavaScript pages well.
+    
+-   **Needs a good device:** Old or slow devices might experience delays or other performance issues.
+    
+
+## 🌐 **Server Side Rendering (SSR)**
+
+It's when the server creates your site's content before it's sent to the browser. It creates the entire HTML of a page. This is a common feature in Next.js.
+
+All logic, data fetching, templating, and routing are handled on the server, not on the client.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690268928823/27e0b264-46c4-44ad-b5b0-a365c17d0989.png?auto=compress,format&format=webp)
+
+### Pros
+
+-   **Quick Display:** Pages show up fast because the server does the work beforehand.
+    
+-   **SEO Boost:** Search engines can read and understand these pages easier.
+    
+-   **Device Friendly:** The server does the hard work, so your device doesn't have to.
+    
+-   **Fast First Load**: Pages load quickly the first time because they're pre-made on the server.
+    
+
+### Cons
+
+-   **Server Load:** The server has to work a lot, which might slow it down.
+    
+-   **Potential Delays:** You could see some lag if the server is slow or far away.
+    
+-   **Full Page Reloads:** Changes or new pages mean waiting for a whole page to load again.
+    
+-   **Complex Caching:** Managing pre-rendered pages in cache gets tricky.
+    
+
+## 🏗️ **Static Site Generation (SSG)**
+
+It means your web page is built once and served as a static file (like HTML). It's often used with site generators like [Astro](https://astro.build/) or [Gatsby](https://www.gatsbyjs.com/).
+
+Everything is prepared at build time, so there's no extra loading or processing when a user visits your page.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690269151686/1ee4b6e2-eeff-4cf4-8918-fda4fc44f4a3.png?auto=compress,format&format=webp)
+
+### **Pros**
+
+-   **Fast Load:** Static files load quickly, making your site speedy for users.
+    
+-   **SEO Friendly:** Static HTML pages are easily read and indexed by search engines.
+    
+-   **Security:** Static sites have fewer security risks as they don't need a database or server-side processing.
+    
+-   **Cheap Hosting:** Light, static files cost less to host compared to dynamic sites.
+    
+
+### **Cons**
+
+-   **Interaction Limits:** It's hard to handle live updates or respond to user actions.
+    
+-   **Rebuild Needed:** Any update means rebuilding and redeploying the entire site.
+    
+-   **Not for Large Sites:** Managing thousands of pages can be complex and slow.
+    
+-   **No Real-time Content:** All content needs to be available at build time, making real-time updates challenging.
+    
+
+## 🆚 **CSR vs. SSR vs. SSG: A Comparison**
+
+### Speed
+
+**CSR**: It's slower to start because the browser has to do a lot. Once it's going, changes are quick.
+
+**SSR:** Loads fast at first because the server does the hard work. But updates can take time.
+
+**SSG:** Loads super fast because everything is ready. For updates, they need a site rebuild.
+
+### SEO
+
+**CSR:** Search engines struggle to read these pages. Not good for SEO.
+
+**SSR & SSG:** Both are good for SEO. Search engines can read and understand these pages easily.
+
+### Managing High Traffic
+
+**CSR:** Great, since the server only has to send out JavaScript, reducing its workload.
+
+**SSR**: Harder for the server. For each visitor, the server has to make a whole page.
+
+**SSG:** Since all content is pre-generated, it can smoothly handle a large number of visitors without extra server effort.
+
+### Updates and Changes
+
+**CSR:** Great for apps with lots of updates. Changes happen in the browser, not the server.
+
+**SSR:** It can handle updates, but every change needs the server, which can slow things down.
+
+**SSG:** Not great for lots of changes. You have to rebuild the whole site for every update.
+
+## 🧭 **Which One to Choose?**
+
+Picking between CSR, SSR, and SSG depends on the type of project you're working on. Here's a handy guide to help you out:
+
+### Client Side Rendering
+
+CSR might be a good choice if you're making something interactive, like a game such as Tic Tac Toe or a chat app where SEO isn't so important.
+
+It's great when you need speed after the first load and instant updates without reaching back to the server.
+
+### Server Side Rendering
+
+If you're building an app where data is often changed and needs to be SEO-friendly, like a social media site such as Instagram, then you should go for SSR.
+
+It allows the page to update on each request, and it's great for apps where content changes frequently.
+
+### Static Side Generation
+
+If you're creating a blog or a content-focused site that doesn't update very often, then you should choose SSG.
+
+It’s great for sites where content remains the same for every user and doesn't need to change after it's loaded.
+
+Also, it's pretty fast and secure because all pages are pre-built.
+
+## Summary
+
+Web rendering strategies decide how a website renders its content.  
+Pick **CSR** for highly interactive applications, **SSR** for data-heavy websites requiring SEO, and **SSG** for content-heavy sites that don't often need updates.
