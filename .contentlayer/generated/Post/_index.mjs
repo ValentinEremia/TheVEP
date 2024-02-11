@@ -11,6 +11,7 @@ import instagramNewPhotoFiltersAnnouncedEasierReelsMdx from './instagram-new-pho
 import learningWebDevelopmentTogetherWithARealProjectMdx from './learning-web-development-together-with-a-real-project.mdx.json' assert { type: 'json' }
 import microsoftOfficiallyLaunchesLoopNotionCompetitorMdx from './Microsoft-officially-launches-Loop-Notion-competitor.mdx.json' assert { type: 'json' }
 import notesTextEvernoteOnenoteKeepAppsMdx from './notes-text-evernote-onenote-keep-apps.mdx.json' assert { type: 'json' }
+import notionLinkedMdx from './notion-linked.mdx.json' assert { type: 'json' }
 import pescuituluiLaRapitorSi_8BeneficiiAleSaleMdx from './pescuitului-la-rapitor-si-8-beneficii-ale-sale.mdx.json' assert { type: 'json' }
 import targovisteMdx from './targoviste.mdx.json' assert { type: 'json' }
 import theLastOfUsMdx from './the-last-of-us.mdx.json' assert { type: 'json' }
@@ -19,4 +20,4 @@ import troutLuresHandMadeMdx from './trout-lures-hand-made.mdx.json' assert { ty
 import useChatGptForExcelMdx from './use-chat-gpt-for-excel.mdx.json' assert { type: 'json' }
 import worldWideWebMdx from './world-wide-web.mdx.json' assert { type: 'json' }
 
-export const allPosts = [assasinsCreedValhallaMdx, buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx, cmdDeleteFolderHowToRemoveFilesAndFoldersInWindowsMdx, csrSsrSsgMdx, eminemFortniteOgChapter_4FinaleMdx, guideToUsingImagesInNextjsMdx, haveFunWithWindowsMessageBoxesMdx, instagramNewPhotoFiltersAnnouncedEasierReelsMdx, learningWebDevelopmentTogetherWithARealProjectMdx, microsoftOfficiallyLaunchesLoopNotionCompetitorMdx, notesTextEvernoteOnenoteKeepAppsMdx, pescuituluiLaRapitorSi_8BeneficiiAleSaleMdx, targovisteMdx, theLastOfUsMdx, topFamousAppsBuiltWithFlutterFrameworkMdx, troutLuresHandMadeMdx, useChatGptForExcelMdx, worldWideWebMdx]
+export const allPosts = [assasinsCreedValhallaMdx, buildingASimpleAnimatedAccordionComponentWithTailwindCssMdx, cmdDeleteFolderHowToRemoveFilesAndFoldersInWindowsMdx, csrSsrSsgMdx, eminemFortniteOgChapter_4FinaleMdx, guideToUsingImagesInNextjsMdx, haveFunWithWindowsMessageBoxesMdx, instagramNewPhotoFiltersAnnouncedEasierReelsMdx, learningWebDevelopmentTogetherWithARealProjectMdx, microsoftOfficiallyLaunchesLoopNotionCompetitorMdx, notesTextEvernoteOnenoteKeepAppsMdx, notionLinkedMdx, pescuituluiLaRapitorSi_8BeneficiiAleSaleMdx, targovisteMdx, theLastOfUsMdx, topFamousAppsBuiltWithFlutterFrameworkMdx, troutLuresHandMadeMdx, useChatGptForExcelMdx, worldWideWebMdx]
